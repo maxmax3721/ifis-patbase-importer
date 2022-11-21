@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Xml.Linq;
 
-namespace ifis_patbase_impoter
+namespace ifis_patbase_importer
 {
     public class XRaw : XText
     {

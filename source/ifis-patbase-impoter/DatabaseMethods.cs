@@ -7,8 +7,9 @@ using System.Data;
 using System.Linq;
 using System.IO;
 using System.Xml.Linq;
+using System.Reflection.Emit;
 
-namespace ifis_patbase_impoter
+namespace ifis_patbase_importer
 {
     internal static class DatabaseMethods
     {
@@ -56,11 +57,12 @@ namespace ifis_patbase_impoter
 
         }
 
-        public static void MigrateData(Mapping[] mappings, XElement recordXElement, DataSet sourceDataset,Options opts)
+        public static RecordLog MigrateData(Mapping[] mappings, XElement recordXElement, DataSet sourceDataset,Options opts)
         { 
             //target connection string (GC)
             var cs = $"server={opts.server};userid={opts.userid};password={opts.password};database={opts.targetDBName};" +
             $"Convert Zero Datetime=True";
+
 
             var con = new MySqlConnection(cs);
             con.Open();
@@ -111,37 +113,33 @@ namespace ifis_patbase_impoter
             var newRowsForRecord = new Dictionary<string, DataRow[]>();
             string tableName = string.Empty;
 
-            try
+            foreach (var tableMappings in orderedTables)
             {
-                foreach (var tableMappings in orderedTables)
-                {
-                    tableName = tableMappings.Key.TableName;
-                    var newRows = GetTableDataForAbstract(targetDataset.Tables[tableName], tableMappings.ToArray(), recordXElement, newRowsForRecord);
-                    newRowsForRecord[tableName] = newRows;
-                }
-            }
-            catch (System.ArgumentException e)
-            {
-                Program.WriteError(Console.Error,"label",e.GetType().FullName,e.Message + $" In table {tableName}");
+                tableName = tableMappings.Key.TableName;
+                var newRows = GetTableDataForAbstract(targetDataset.Tables[tableName], tableMappings.ToArray(), recordXElement, newRowsForRecord);
+                newRowsForRecord[tableName] = newRows;
             }
 
             stopwatch.Stop();
             Program.HandleMessage($"Data Proccessing took {stopwatch.ElapsedMilliseconds}ms");
-
             stopwatch.Restart();
 
-            
-            //write to grand_central 
+            //write to grand_central
             foreach (string table in orderedTables.Select(mapping => mapping.Key.TableName).Distinct().ToArray())
             {
                 DataAdapters[table].Update(targetDataset, table);
             }
+
             myTrans.Commit();
 
             stopwatch.Stop();
             Program.HandleMessage($"Write tables to {opts.targetDBName} {stopwatch.ElapsedMilliseconds}ms");
-
             con.Close();
+
+            //try record info
+            var label = targetDataset.Tables["fsta"].Rows[0]["label"].ToString();
+            var pubNum = targetDataset.Tables["fsta"].Rows[0]["patent_number"].ToString().Split("")[0];
+            return new RecordLog { Label = label, PublicationNumber = pubNum };
             
         }
 

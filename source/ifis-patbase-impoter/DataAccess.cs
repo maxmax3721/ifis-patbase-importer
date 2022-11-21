@@ -1,16 +1,18 @@
 ﻿using CommandLine;
+using CsvHelper;
 using Org.BouncyCastle.Crypto;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Xml.Linq;
 
-namespace ifis_patbase_impoter
+namespace ifis_patbase_importer
 {
     public static class DataAccess
     {
@@ -111,13 +113,12 @@ namespace ifis_patbase_impoter
 
         internal static Func<XElement, IDictionary<string, object[]>> LabelAccessor(Options opts)
         {
-            var lastIndex = DatabaseMethods.GetMaxPbLabelInt(opts);
-            var Index = lastIndex;
+            var Index = DatabaseMethods.GetMaxPbLabelInt(opts);
 
             return record =>
             {
                 Index++;
-                var Label = "PB" + Index.ToString();
+                var Label = "PB" + Index.ToString("000000");
 
                 return new Dictionary<string, object[]>
                 {
@@ -198,10 +199,17 @@ namespace ifis_patbase_impoter
             return record =>
             {
                 var priorityElements = record.Element("Priorities").Elements("Priority");
-                var minPriorityDate = priorityElements.Min(el => el.Element("Date")).Value;
-                var minPriorityDateElement = priorityElements.Where(el => el.Element("Date").Value == minPriorityDate).FirstOrDefault();
 
-                return minPriorityDateElement.Element("Number").Value + " (" + minPriorityDateElement.Element("Date").Value + ")";
+                if(priorityElements != null)
+                {
+                    var minPriorityDate = priorityElements.Min(el => el.Element("Date").Value);
+                    var minPriorityDateElement = priorityElements.Where(el => el.Element("Date").Value == minPriorityDate).FirstOrDefault();
+                    return minPriorityDateElement.Element("Number").Value + " (" + minPriorityDateElement.Element("Date").Value + ")";
+                }
+                else
+                {
+                    return System.DBNull.Value;
+                }
             };
         }
 
@@ -293,7 +301,7 @@ namespace ifis_patbase_impoter
 
                 foreach(DataRow row in AuthorRows)
                 {
-                    if (row["TEMPORARY_address"] != null)
+                    if (!IsNullorEmptyString(row["TEMPORARY_address"]))
                     {
                         authorIDs.Add(row["author_id"]);
                         addresses.Add(row["TEMPORARY_address"]);
@@ -315,6 +323,10 @@ namespace ifis_patbase_impoter
 
         internal static Func<XElement, object[]> ThesaurusIDAccessor(DataSet sourceDataSet)
         {
+            var codeNotFoundLogger = new CsvLogger("codeNotFoundInControlledMajorLUT.csv");
+            codeNotFoundLogger.csvWriter.WriteHeader<CodeNotFoundInControlledMajorLUTLog>();
+            codeNotFoundLogger.csvWriter.NextRecord();
+
             return record =>
             {
                 var IDs = new List<object>();
@@ -322,20 +334,21 @@ namespace ifis_patbase_impoter
                 var IPCElements = record.Element("IPCs").Elements("IPC");
                 var CPCElements = record.Element("CPCs").Elements("CPC");
 
-                IDs.LookupIDsFromPatentCodes(IPCElements,sourceDataSet);
-                IDs.LookupIDsFromPatentCodes(CPCElements,sourceDataSet);
+                IDs.LookupIDsFromPatentCodes(IPCElements,sourceDataSet, codeNotFoundLogger);
+                IDs.LookupIDsFromPatentCodes(CPCElements,sourceDataSet, codeNotFoundLogger);
 
                 return IDs.ToArray();
             };
         }
 
-        private static List<object> LookupIDsFromPatentCodes(this List<object> IDs, IEnumerable<XElement> Elements,DataSet sourceDataSet)
+        private static List<object> LookupIDsFromPatentCodes(this List<object> IDs, IEnumerable<XElement> Elements,DataSet sourceDataSet, CsvLogger codeNotFoundLogger)
         {
+
             if (Elements != null)
             {
-                foreach (XElement IPCElement in Elements)
+                foreach (XElement CodeElement in Elements)
                 {
-                    var controlledMajorLUTRow = sourceDataSet.Tables["controlled_major_lut"].Rows.Find(IPCElement.Value);
+                    var controlledMajorLUTRow = sourceDataSet.Tables["controlled_major_lut"].Rows.Find(CodeElement.Value);
 
                     if(controlledMajorLUTRow != null)
                     {
@@ -343,7 +356,7 @@ namespace ifis_patbase_impoter
                         {
                             var colName = "ID" + i.ToString();
                             var ID = controlledMajorLUTRow[colName];
-                            if (ID != null)
+                            if (!IsNullorEmptyString(ID))
                             {
                                 IDs.Add(ID);
                             }
@@ -355,8 +368,10 @@ namespace ifis_patbase_impoter
                     }
                     else
                     {
-                        //remove this at some point
-                        Program.WriteError(Console.Error, IPCElement.Value, "No row found in thesaurus ID lut for patent code", "");
+                        var record = new CodeNotFoundInControlledMajorLUTLog { Code = CodeElement.Value };
+                        codeNotFoundLogger.csvWriter.WriteRecord(record);
+                        codeNotFoundLogger.csvWriter.NextRecord();
+                        codeNotFoundLogger.csvWriter.Flush();
                     }
 
                 }

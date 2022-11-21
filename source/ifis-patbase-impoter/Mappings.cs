@@ -5,7 +5,7 @@ using System.Text;
 using System.Xml.Linq;
 using MySql.Data.MySqlClient;
 
-namespace ifis_patbase_impoter
+namespace ifis_patbase_importer
 {
 	public class Mapping
 	{

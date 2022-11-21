@@ -3,7 +3,7 @@ using System.Linq;
 using System.Net;
 using System.Text.RegularExpressions;
 
-namespace ifis_patbase_impoter
+namespace ifis_patbase_importer
 {
     public static class ElsExtensions
     {

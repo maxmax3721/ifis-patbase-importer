@@ -5,7 +5,7 @@ using CommandLine;
 using CommandLine.Text;
 using Microsoft.VisualBasic.CompilerServices;
 
-namespace ifis_patbase_impoter
+namespace ifis_patbase_importer
 {
     class Options
     {
@@ -25,6 +25,6 @@ namespace ifis_patbase_impoter
         public bool verbose { get; set; }
 
         [Option('x',"xmlPath", Required = true, Default = false, HelpText = "path to xml source")]
-        public string xmlPath { get; set; }
+        public IEnumerable<string> xmlPath { get; set; }
     }
 }

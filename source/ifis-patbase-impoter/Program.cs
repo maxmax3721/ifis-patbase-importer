@@ -1,13 +1,17 @@
 ﻿using CommandLine;
+using CsvHelper;
 using MySql.Data.MySqlClient;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks.Sources;
 using System.Xml.Linq;
 
-namespace ifis_patbase_impoter
+namespace ifis_patbase_importer
 {
     internal class Program
     {
@@ -49,7 +53,6 @@ namespace ifis_patbase_impoter
                 //add LUTs to dataset
                 sourceDataSet.AddCSVtoDataSet("publication_title_lut", "config/LookupCSVs/PublicationTitleLUT.csv", new[] { "Country Code", "Kind Code" });
                 sourceDataSet.AddCSVtoDataSet("journal_id_lut", "config/LookupCSVs/JournalIDLUT.csv", new[] {"publication_title"});
-                sourceDataSet.AddCSVtoDataSet("thesaurus_id_lut", "config/LookupCSVs/ThesaurusIDLUT.csv", new[] {"Patent_code"});
                 sourceDataSet.AddCSVtoDataSet("controlled_major_lut", "config/LookupCSVs/ControlledMajorLUT.csv", new[] { "Patent_code" });
 
                 //Define record-wise mappings
@@ -130,43 +133,54 @@ namespace ifis_patbase_impoter
 
                 var recordsMigrated = 0;
                 var recordsFailed = 0;
-                var previousLabel = "0";
+                var logger = new CsvLogger("log.csv");
+                logger.csvWriter.WriteHeader<RecordLog>();
+                logger.csvWriter.NextRecord();
 
-                var stopwatch = new Stopwatch();
-                stopwatch.Start();
-
-                XDocument sourceXDoc = XDocument.Load(opts.xmlPath);
-
-                foreach (XElement RecordXElement in sourceXDoc.Root.Elements("Family").Elements("Patent"))
+                foreach (var sourceFilePath in opts.xmlPath)
                 {
-                    try
+                    XDocument sourceXDoc = XDocument.Load(sourceFilePath);
+
+                    foreach (XElement RecordXElement in sourceXDoc.Root.Elements("Family").Elements("Patent"))
                     {
-                        //migrate data
-                        DatabaseMethods.MigrateData(Mappings, RecordXElement, sourceDataSet, opts);
-                        //calculate remaining records to migrate
-                        recordsMigrated = recordsMigrated + 1;
+                        try
+                        {
+                            //migrate data
+                            var recordLog = DatabaseMethods.MigrateData(Mappings, RecordXElement, sourceDataSet, opts);
+                            //log record migration
+                            recordsMigrated = recordsMigrated + 1;
+                            logger.csvWriter.WriteRecord(recordLog);
+                            logger.csvWriter.NextRecord();
+                            logger.csvWriter.Flush();
+                        }
+                        catch (ifis_patbase_importer.KeyDataNotFoundException e)
+                        {
+                            Program.WriteDataNotFoundError(Console.Error, e.PatentNumber, e.CountryCode, e.KindCode, e.Message);
+                            recordsFailed = recordsFailed + 1;
+                        }
+                        catch (MySql.Data.MySqlClient.MySqlException e)
+                        {
+                            Program.WriteError(Console.Error, "Transaction Failed", e.GetType().ToString(), e.Message);
+                            Program.WriteError(Console.Error, $"", "Data for record were not migrated", "");
+                            recordsFailed = recordsFailed + 1;
+                        }
 
-                        stopwatch.Stop();
-                        Program.HandleMessage($"{recordsMigrated} records migrated. Migration took {stopwatch.ElapsedMilliseconds}ms \r\n");
+
                     }
-                    catch (MySql.Data.MySqlClient.MySqlException e)
-                    {
-                        Program.WriteError(Console.Error, "Transaction Failed", e.GetType().ToString(), e.Message);
-                        Program.WriteError(Console.Error, $"", "Data for record were not migrated", "");
-                        recordsFailed = recordsFailed + 1;
-                    }
-
-
                 }
-
                 Program.HandleMessage($"Migration complete. {recordsMigrated+recordsFailed} records processed. {recordsMigrated} records migrated. {recordsFailed} records failed.");
-
             });
         }
 
         public static void WriteError(TextWriter output, string id, string exceptionType, object message)
         {
             output.WriteLine($"{id}: {exceptionType}: {message}");
+            output.Flush();
+        }
+
+        public static void WriteDataNotFoundError(TextWriter output, string patNum, string countryCode, string kindCode, object message)
+        {
+            output.WriteLine($"{patNum}: {countryCode}: {kindCode}: {message}");
             output.Flush();
         }
 

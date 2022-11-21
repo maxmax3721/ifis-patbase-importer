@@ -9,7 +9,7 @@ using MySql.Data.MySqlClient;
 using System.Data;
 using System.Diagnostics;
 
-namespace ifis_patbase_impoter
+namespace ifis_patbase_importer
 {
     public static class Lookups
     {

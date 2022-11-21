@@ -351,3 +351,5 @@ MigrationBackup/
 
 #ignore xml test files
 *.xml
+/config/LookupCSVs/removespaces.ps1
+/config/LookupCSVs/test.csv
