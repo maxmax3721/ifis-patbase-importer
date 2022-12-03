@@ -65,16 +65,27 @@ namespace ifis_patbase_importer
 
         private static object GetJournalID(object pubTitle, XElement record, DataSet sourceDataSet)
         {
-            var journalLUTRow = sourceDataSet.Tables["journal_id_lut"].Rows.Find(pubTitle.ToString());
+            var countryCode = record.Element("CountryCode").Value;
+            var kindCode = record.Element("KindCode").Value;
 
-            if (journalLUTRow != null)
+            var journalLUTRow = sourceDataSet.Tables["journal_id_lut"].AsEnumerable().Where(dr => ((string)dr["CountryCode"] == countryCode) && ((string)dr["KindCode"] == kindCode));
+
+            if (journalLUTRow.Any())
             {
-                return journalLUTRow["journal_ID"];
+                return journalLUTRow.First()["Journal_ID"];
             }
             else
             {
-                //throw new KeyDataNotFoundException("No journal_id found", record);
-                return System.DBNull.Value;
+                journalLUTRow = sourceDataSet.Tables["journal_id_lut"].AsEnumerable().Where(dr => ((string)dr["CountryCode"] == countryCode) && ((string)dr["KindCode"] == ""));
+
+                if(journalLUTRow.Any())
+                {
+                    return journalLUTRow.First()["Journal_ID"];
+                }
+                else
+                {
+                    throw new KeyDataNotFoundException("No journal_id found", record);
+                }
             }
         }
 
@@ -113,10 +124,10 @@ namespace ifis_patbase_importer
 
         internal static Func<XElement, IDictionary<string, object[]>> LabelAccessor(Options opts)
         {
-            var Index = DatabaseMethods.GetMaxPbLabelInt(opts);
-
             return record =>
             {
+                //significantly slows process but means labels are consecutive even when a records is not imported
+                var Index = DatabaseMethods.GetMaxPbLabelInt(opts);
                 Index++;
                 var Label = "PB" + Index.ToString("000000");
 
@@ -172,20 +183,22 @@ namespace ifis_patbase_importer
             };
         }
 
-        internal static Func<XElement, object> PatentNumAccessor()
+        internal static Func<XElement, object> PatentNumAccessor(DataSet sourceDataSet)
         {
             return record =>
             {
                 object patNum = System.DBNull.Value;
 
                 var PatNumAttribute = record.Attribute("pn");
+                var CountryCodeElement = record.Element("CountryCode");
                 var KindCodeElement = record.Element("KindCode");
 
-                if ((PatNumAttribute != null) & (KindCodeElement != null))
+                try
                 {
+                    var GCKindCode = sourceDataSet.Tables["kind_code_lut"].Rows.Find(new object[] { CountryCodeElement.Value.ToString(), KindCodeElement.Value.ToString() });
                     patNum = PatNumAttribute.Value.ToString() + "" + KindCodeElement.Value.ToString();
                 }
-                else
+                catch
                 {
                     throw new KeyDataNotFoundException("No Patent Number Found", record);
                 }
@@ -290,7 +303,7 @@ namespace ifis_patbase_importer
             return ds.Tables[0];
         }
 
-        internal static Func<IDictionary<string, DataRow[]>, IDictionary<string, object[]>> AuthorIDAccessor(DataSet sourceDataSet)
+        public static Func<IDictionary<string, DataRow[]>, IDictionary<string, object[]>> AuthorIDAccessor(DataSet sourceDataSet)
         {
 
             return newRowsForAbstract =>
@@ -316,9 +329,53 @@ namespace ifis_patbase_importer
             };
         }
 
-        internal static Func<XElement, IDictionary<string, object[]>> LanguageAccessor()
+        public static Func<XElement, IDictionary<string, object[]>> LanguageAccessor(DataSet sourceDataSet)
         {
-            throw new NotImplementedException();
+            return record =>
+            {
+                var summaryLanguages = record.Element("Abstracts").Elements("Abstract").Where(el => (el.Attribute("lang").Value != "mt")).Select(el => el.Attribute("lang").Value);
+                var sourceLanguages = record.Element("Descriptions").Elements("Description").Where(el => (el.Attribute("lang").Value != "mt")).Select(el => el.Attribute("lang").Value);
+
+                var Langs = new List<Object>();
+                var LangCodes = new List<Object>();
+                var EntryNos = new List<Object>();
+                var SumSource = new List<Object>();
+
+                var sumSource = "u";
+                foreach (var langEnumerable in new[] { summaryLanguages, sourceLanguages })
+                { 
+
+                    var i = 0;
+                    foreach (var lang in langEnumerable)
+                    {
+                        var langLUTRow = sourceDataSet.Tables["language_LUT"].Rows.Find(lang);
+
+                        if (langLUTRow != null)
+                        {
+                            i++;
+                            Langs.Add(langLUTRow["language"]);
+                            LangCodes.Add(langLUTRow["gc_language_code"]);
+                            EntryNos.Add(i);
+                            SumSource.Add(sumSource);
+
+                        }
+                        else
+                        {
+                            Program.WriteError(Console.Error, "Language Code Not Found in Languages LUT", lang, "");
+                        }
+                    }
+                    sumSource = "o";
+                }
+
+                return new Dictionary<string, object[]>()
+                {
+                    {"language", Langs.ToArray() },
+                    {"language_code", LangCodes.ToArray() },
+                    {"entry_no", EntryNos.ToArray() },
+                    {"summary_source", SumSource.ToArray() }
+                };
+
+            };
         }
 
         internal static Func<XElement, object[]> ThesaurusIDAccessor(DataSet sourceDataSet)
@@ -409,7 +466,7 @@ namespace ifis_patbase_importer
                     foreach (XElement CPCElement in CPCElements)
                     {
                         Codes.Add(CPCElement.Value);
-                        CodeTypes.Add("IPC");
+                        CodeTypes.Add("CPC");
                     }
                 }
 
@@ -418,6 +475,62 @@ namespace ifis_patbase_importer
                     {"code", Codes.ToArray()},
                     {"code_type", CodeTypes.ToArray()}
                 };
+            };
+        }
+
+        internal static Func<XElement, object> AbstractAccessor(DataSet sourceDataSet)
+        {
+            return record =>
+            {
+                var AbstractElements = record.Element("Abstracts").Elements("Abstract");
+                var EnglishElements = AbstractElements.Where(el => el.Attribute("lang").Value == "en");
+                var MachineTranslation = AbstractElements.Where(el => el.Attribute("lang").Value == "mt");
+                var NonEnglishElements = AbstractElements.Where(el => (el.Attribute("lang").Value != "en") && (el.Attribute("lang").Value != "mt"));
+
+                if (EnglishElements.Any())
+                {
+                    return EnglishElements.First().Value;
+                }
+                else if (NonEnglishElements.Count() == 1)
+                {
+                    var langCode = NonEnglishElements.First().Attribute("lang").Value;
+                    var lutRow = sourceDataSet.Tables["language_lut"].Rows.Find(langCode);
+
+                    if (lutRow != null)
+                    {
+                        if (lutRow["charset"].ToString() == "latin")
+                        {
+                            if (MachineTranslation.Any())
+                            {
+                                return NonEnglishElements.First().Value + " Translation: " + MachineTranslation.First().Value;
+                            }
+                            else
+                            {
+                                return NonEnglishElements.First().Value;
+                            }
+                        }
+                        else
+                        {
+                            if (MachineTranslation.Any())
+                            {
+                                return MachineTranslation.First().Value;
+                            }
+                            else
+                            {
+                                return System.DBNull.Value;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        throw new KeyDataNotFoundException($"language code {langCode} not found in languages_LUT", record);
+                    }
+                }
+                else
+                {
+                    throw new KeyDataNotFoundException($"No english abstract and no or multiple non-english abstracts found in source", record);
+                }
+
             };
         }
     }

@@ -2,7 +2,7 @@
   "profiles": {
     "ifis-patbase-impoter": {
       "commandName": "Project",
-      "commandLineArgs": "-u root -p password -d grand_central_pb_test -x patbase_export_286292532.xml -v",
+      "commandLineArgs": "-u root -p password -d grand_central_pb_test -x patbase_export_286292532.xml -v 2>Errors.txt",
       "workingDirectory": "C:\\Users\\maxbo\\Documents\\GitHub\\ifis-patbase-importer"
     }
   }

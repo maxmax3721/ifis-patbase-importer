@@ -37,12 +37,12 @@ namespace ifis_patbase_importer
 		//auto ID mapping
 		public Mapping(Column targetColumn, flag flag) : this(targetColumn, null, flag) { }
 
-		//foerign key mapping
+		//foreign key mapping (or mapping from temporary column)
 		public Mapping(Column targetColumn, Column foreignKeyColumn) : this(targetColumn, null, flag.None, foreignKeyColumn) { }
 
 
-		//foreign key mapping with foreign key accessor function
-		public Mapping(Column[] targetColumns, Func<IDictionary<string, DataRow[]>, IDictionary<string, object[]>>
+        //foreign key mapping with foreign key accessor function (or mapping from temporary column/s)
+        public Mapping(Column[] targetColumns, Func<IDictionary<string, DataRow[]>, IDictionary<string, object[]>>
 			fkDataAccessor, bool IsFKWithAccessorMapping) : this(null, null, flag.None, null)
 		{
 			TargetColumns = targetColumns;

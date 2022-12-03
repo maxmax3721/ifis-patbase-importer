@@ -37,15 +37,22 @@ namespace ifis_patbase_importer
                     dt.Rows.Add(dr);
                 }
 
-            }
+            };
+
+            //remove dupes
+            dt = dt.DefaultView.ToTable( /*distinct*/ true);
+
             sourceDataSet.Tables.Add(dt);
             //set pk
-            var PrimaryKeyColumns = new System.Data.DataColumn[pkColumns.Length];
-            foreach(string pkColumn in pkColumns)
+            if (pkColumns != null)
             {
-                PrimaryKeyColumns[Array.IndexOf(pkColumns,pkColumn)] = sourceDataSet.Tables[tableName].Columns[pkColumn];
+                var PrimaryKeyColumns = new System.Data.DataColumn[pkColumns.Length];
+                foreach(string pkColumn in pkColumns)
+                {
+                    PrimaryKeyColumns[Array.IndexOf(pkColumns,pkColumn)] = sourceDataSet.Tables[tableName].Columns[pkColumn];
+                }
+                sourceDataSet.Tables[tableName].PrimaryKey = PrimaryKeyColumns;
             }
-            sourceDataSet.Tables[tableName].PrimaryKey = PrimaryKeyColumns;
             stopwatch.Stop();
             Program.HandleMessage($"adding CSV {strFilePath} to source dataset took {stopwatch.ElapsedMilliseconds}ms");
             return sourceDataSet;

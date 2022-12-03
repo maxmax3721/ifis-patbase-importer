@@ -48,12 +48,16 @@ namespace ifis_patbase_importer
                 var classification_codes = new Table("classification_codes", opts.targetDBName, Table.Priority.Last);
 
 
+                
+
                 var sourceDataSet = new DataSet();
 
                 //add LUTs to dataset
-                sourceDataSet.AddCSVtoDataSet("publication_title_lut", "config/LookupCSVs/PublicationTitleLUT.csv", new[] { "Country Code", "Kind Code" });
-                sourceDataSet.AddCSVtoDataSet("journal_id_lut", "config/LookupCSVs/JournalIDLUT.csv", new[] {"publication_title"});
+                sourceDataSet.AddCSVtoDataSet("publication_title_lut", "config/LookupCSVs/PublicationTitleLUT.csv", new[] { "CountryCode", "KindCode" });
+                sourceDataSet.AddCSVtoDataSet("journal_id_lut", "config/LookupCSVs/JournalIDLUT.csv", new[] { "CountryCode", "KindCode" });
                 sourceDataSet.AddCSVtoDataSet("controlled_major_lut", "config/LookupCSVs/ControlledMajorLUT.csv", new[] { "Patent_code" });
+                sourceDataSet.AddCSVtoDataSet("language_lut", "config/LookupCSVs/LanguagesLUT.csv", new[] { "patbase_language_code" });
+                sourceDataSet.AddCSVtoDataSet("kind_code_lut", "config/LookupCSVs/GCKindCodeLUT.csv", new[] { "CountryCode", "KindCode" });
 
                 //Define record-wise mappings
                 var Mappings = new[]
@@ -69,11 +73,12 @@ namespace ifis_patbase_importer
                         new Column(fsta,"journal_id"),
                         new Column(fsta,"publisher_id")
                     }, DataAccess.PublicationAccessor(sourceDataSet)),
+                    new Mapping(new Column(fsta,"abstract"),DataAccess.AbstractAccessor(sourceDataSet)),
                     new Mapping(new Column [] {
                         new Column(fsta,"english_title"),
                         new Column(fsta,"foreign_title") 
                     }, DataAccess.TitleAccessor()),
-                    new Mapping(new Column(fsta,"patent_number"), DataAccess.PatentNumAccessor()),
+                    new Mapping(new Column(fsta,"patent_number"), DataAccess.PatentNumAccessor(sourceDataSet)),
                     new Mapping(new Column(fsta,"patent_priority"), DataAccess.PatentPriorityAccessor()),
                     new Mapping(new Column(fsta,"section"), record => {return "V"; }),
                     new Mapping(new Column(fsta,"subsection"), record => {return System.DBNull.Value; }),
@@ -110,12 +115,13 @@ namespace ifis_patbase_importer
                     }, DataAccess.AuthorIDAccessor(sourceDataSet),true),
                     
                     //languages
-                    //new Mapping(new Column[]{
-                    //    new Column(languages,"entry_no"),
-                    //    new Column(languages,"summary_source"),
-                    //    new Column(languages,"language")
-                    //}, DataAccess.LanguageAccessor()),
-                    //new Mapping(new Column(languages,"label"),new Column(fsta,"label")),
+                    new Mapping(new Column[]{
+                        new Column(languages,"entry_no"),
+                        new Column(languages,"summary_source"),
+                        new Column(languages,"language_code"),
+                        new Column(languages,"language")
+                    }, DataAccess.LanguageAccessor(sourceDataSet)),
+                    new Mapping(new Column(languages,"label"),new Column(fsta,"label")),
 
                     //controlled_major
                     new Mapping(new Column(controlled_major,"thesaurus_id"), DataAccess.ThesaurusIDAccessor(sourceDataSet)),
