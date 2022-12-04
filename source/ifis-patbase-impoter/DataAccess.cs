@@ -49,21 +49,37 @@ namespace ifis_patbase_importer
         {
             return record =>
             {
-                var pubTitle = GetPubTitle(record, sourceDataSet);
-                var journal_id = GetJournalID(pubTitle, record, sourceDataSet);
-                var publisher_id = System.DBNull.Value; //TODO
+                
+                var journalID = GetJournalID(record, sourceDataSet);
+                object pubTitle;
+                object publisherID;
+
+                if(journalID != null)
+                {
+                    var journalRow = GetJournalRow(journalID, record, sourceDataSet);
+                    pubTitle = journalRow["journal_name"];
+                    publisherID = journalRow["publisher_id"];
+
+                }
+                else
+                {
+                    pubTitle = System.DBNull.Value;
+                    publisherID = System.DBNull.Value;
+                }
+
+
 
                 return new Dictionary<string, object[]>()
                 {
-                    {"publication_title",new [] {publisher_id} },
-                    {"journal_id",new [] {journal_id} },
-                    {"publisher_id",new [] {publisher_id} }
+                    {"publication_title",new [] {pubTitle} },
+                    {"journal_id",new [] {journalID} },
+                    {"publisher_id",new [] {publisherID} }
                 };
             };
 
         }
 
-        private static object GetJournalID(object pubTitle, XElement record, DataSet sourceDataSet)
+        private static object GetJournalID( XElement record, DataSet sourceDataSet)
         {
             var countryCode = record.Element("CountryCode").Value;
             var kindCode = record.Element("KindCode").Value;
@@ -84,41 +100,21 @@ namespace ifis_patbase_importer
                 }
                 else
                 {
-                    throw new KeyDataNotFoundException("No journal_id found", record);
+                    throw new KeyDataNotFoundException("No journal_id found in journal_id_lut", record, true);
                 }
             }
         }
 
-        private static object GetPubTitle(XElement record, DataSet sourceDataSet)
+        private static DataRow GetJournalRow(object journalID, XElement record, DataSet sourceDataSet)
         {
-            var countryCode = record.Element("CountryCode").Value;
-
-            if (countryCode != null)
+            var journalsRow = sourceDataSet.Tables["journals"].Rows.Find(journalID);
+            if (journalsRow != null)
             {
-                var kindCode = record.Element("KindCode").Value;
-                var pubTitleLUTRow = sourceDataSet.Tables["publication_title_lut"].Rows.Find(new[] { countryCode, kindCode });
-
-                if (pubTitleLUTRow != null)
-                {
-                    return pubTitleLUTRow["publication_title"];
-                }
-                else
-                {
-                    pubTitleLUTRow = sourceDataSet.Tables["publication_title_lut"].Rows.Find(new[] { countryCode, "" });
-
-                    if (pubTitleLUTRow != null)
-                    {
-                        return pubTitleLUTRow["publication_title"];
-                    }
-                    else
-                    {
-                        throw new Exception($"Country Code {countryCode} not found in publication_title_lut");
-                    }
-                }
+                return journalsRow;
             }
             else
             {
-                throw new Exception($"Country Code null");
+                throw new KeyDataNotFoundException($"Journal ID {journalID} not found in grand_central.journals", record, true);
             }
         }
 
@@ -157,7 +153,7 @@ namespace ifis_patbase_importer
                         {
                             if (forTitleElement == null)
                             {
-                                throw new KeyDataNotFoundException("No Valid Title Element Found", record);
+                                throw new KeyDataNotFoundException("No Valid Title Element Found", record, true);
                             }
                             else
                             {
@@ -196,11 +192,11 @@ namespace ifis_patbase_importer
                 try
                 {
                     var GCKindCode = sourceDataSet.Tables["kind_code_lut"].Rows.Find(new object[] { CountryCodeElement.Value.ToString(), KindCodeElement.Value.ToString() });
-                    patNum = PatNumAttribute.Value.ToString() + "" + KindCodeElement.Value.ToString();
+                    patNum = PatNumAttribute.Value.ToString() + " " + KindCodeElement.Value.ToString();
                 }
                 catch
                 {
-                    throw new KeyDataNotFoundException("No Patent Number Found", record);
+                    throw new KeyDataNotFoundException("No Patent Number Found", record, true);
                 }
 
                 return patNum;
@@ -523,12 +519,16 @@ namespace ifis_patbase_importer
                     }
                     else
                     {
-                        throw new KeyDataNotFoundException($"language code {langCode} not found in languages_LUT", record);
+                        throw new KeyDataNotFoundException($"language code {langCode} not found in languages_LUT", record,true);
                     }
+                }
+                else if (NonEnglishElements.Count() == 0)
+                {
+                    throw new KeyDataNotFoundException($"No abstract found", record, false);
                 }
                 else
                 {
-                    throw new KeyDataNotFoundException($"No english abstract and no or multiple non-english abstracts found in source", record);
+                    throw new KeyDataNotFoundException($"Multiple non-english abstracts found", record, true);
                 }
 
             };

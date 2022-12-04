@@ -47,13 +47,14 @@ namespace ifis_patbase_importer
                 var controlled_major = new Table("controlled_major", opts.targetDBName, Table.Priority.Last);
                 var classification_codes = new Table("classification_codes", opts.targetDBName, Table.Priority.Last);
 
-
                 
-
                 var sourceDataSet = new DataSet();
 
+                //add gc journals table to source dataset
+                var journalsSource = new Table("journals", opts.targetDBName, new[] { "journal_id" });
+                sourceDataSet.AddToDataSet(opts, journalsSource,null,"*");
+
                 //add LUTs to dataset
-                sourceDataSet.AddCSVtoDataSet("publication_title_lut", "config/LookupCSVs/PublicationTitleLUT.csv", new[] { "CountryCode", "KindCode" });
                 sourceDataSet.AddCSVtoDataSet("journal_id_lut", "config/LookupCSVs/JournalIDLUT.csv", new[] { "CountryCode", "KindCode" });
                 sourceDataSet.AddCSVtoDataSet("controlled_major_lut", "config/LookupCSVs/ControlledMajorLUT.csv", new[] { "Patent_code" });
                 sourceDataSet.AddCSVtoDataSet("language_lut", "config/LookupCSVs/LanguagesLUT.csv", new[] { "patbase_language_code" });
@@ -161,7 +162,10 @@ namespace ifis_patbase_importer
                         }
                         catch (ifis_patbase_importer.KeyDataNotFoundException e)
                         {
-                            Program.WriteDataNotFoundError(Console.Error, e.PatentNumber, e.CountryCode, e.KindCode, e.Message);
+                            if (e.Log)
+                            {
+                                Program.WriteDataNotFoundError(Console.Error, e.PatentNumber, e.CountryCode, e.KindCode, e.Message);
+                            }
                             recordsFailed = recordsFailed + 1;
                         }
                         catch (MySql.Data.MySqlClient.MySqlException e)

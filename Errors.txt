@@ -1,593 +1,490 @@
-KR102455690: KR: B1: No journal_id found
-KR20220140268: KR: A: No journal_id found
-KR20220140329: KR: A: No journal_id found
-KR20220140325: KR: A: No journal_id found
-KR20220140401: KR: A: No journal_id found
-KR20220140314: KR: A: No journal_id found
-KR20220139696: KR: A: No journal_id found
-KR20220138990: KR: A: No journal_id found
-CN114073769: CN: A: No journal_id found
-IN202114035532: IN: A: No journal_id found
-AU2020247127: AU: AA: No journal_id found
-BR112021018609: BR: A2: No journal_id found
-CN113747801: CN: A: No journal_id found
-MX2021011238: MX: A1: No journal_id found
-CN115136002: CN: A: No journal_id found
-KR20220123711: KR: A: No journal_id found
-KR20220138654: KR: A: No journal_id found
-KR102324795: KR: B1: No journal_id found
-KR20220138655: KR: A: No journal_id found
-CN112956543: CN: A: No journal_id found
-CN113186121: CN: A: No journal_id found
-CN113186121: CN: B: No journal_id found
-AU2021105215: AU: AD: No journal_id found
-IN202121016160: IN: A: No journal_id found
-KR20220138171: KR: A: No journal_id found
-CN113443188: CN: A: No journal_id found
-ZA202110716: ZA: A: No journal_id found
-CN215341267: CN: U: No journal_id found
-CN216853702: CN: U: No journal_id found
-AU2020396360: AU: AA: No journal_id found
-AU2020396377: AU: AA: No journal_id found
-AU2020397620: AU: AA: No journal_id found
-AU2020398072: AU: AA: No journal_id found
-BR112022010814: BR: A2: No journal_id found
-BR112022010816: BR: A2: No journal_id found
-BR112022010817: BR: A2: No journal_id found
-BR112022010822: BR: A2: No journal_id found
-CO20220009114: CO: A2: No journal_id found
-CO20220009119: CO: A2: No journal_id found
-CO20220009121: CO: A2: No journal_id found
-CO20220009288: CO: A2: No journal_id found
-IL293492: IL: AA: No journal_id found
-IL293493: IL: AA: No journal_id found
-IL293494: IL: AA: No journal_id found
-IL293495: IL: AA: No journal_id found
-KR20220110265: KR: A: No journal_id found
-KR20220110541: KR: A: No journal_id found
-KR20220110798: KR: A: No journal_id found
-KR20220111310: KR: A: No journal_id found
-MX2022006591: MX: A1: No journal_id found
-MX2022006592: MX: A1: No journal_id found
-MX2022006593: MX: A1: No journal_id found
-PE20221183: PE: A1: No journal_id found
-PE20221184: PE: A1: No journal_id found
-PE20221185: PE: A1: No journal_id found
-CN112998182: CN: A: No journal_id found
-CN113086415: CN: A: No journal_id found
-KR102349790: KR: B1: No journal_id found
-KR102313278: KR: B1: No journal_id found
-KR102327496: KR: B1: No journal_id found
-UA147709: UA: U: No journal_id found
-CN113122473: CN: A: No journal_id found
-CN113122473: CN: B: No journal_id found
-CN113180250: CN: A: No journal_id found
-AU2020395870: AU: AA: No journal_id found
-BR112022009586: BR: A2: No journal_id found
-CN114786546: CN: A: No journal_id found
-IN202217026444: IN: A: No journal_id found
-KR20220106191: KR: A: No journal_id found
-MX2022006287: MX: A1: No journal_id found
-AU2020217761: AU: AA: No journal_id found
-AU2020396099: AU: AA: No journal_id found
-CN107333223: CN: A: No journal_id found
-CN107333223: CN: B: No journal_id found
-CN107851364: CN: A: No journal_id found
-CN107851364: CN: B: No journal_id found
-CN113631030: CN: A: No journal_id found
-DE602015044473: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-DE602017031263: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-EP3225105: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-EP3311370: EP: A4: No english abstract and no or multiple non-english abstracts found in source
-EP3311370: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-GB201617287: GB: A0: No english abstract and no or multiple non-english abstracts found in source
-GB2545536: GB: B2: No english abstract and no or multiple non-english abstracts found in source
-VN82289: VN: A: No journal_id found
-AU2019393256: AU: AA: No journal_id found
-BR112021010847: BR: A2: No journal_id found
-CN113518616: CN: A: No journal_id found
-CN115087647: CN: A: No journal_id found
-HK40052080: HK: A1: No journal_id found
-IL283712: IL: AA: No journal_id found
-IN202117029502: IN: A: No journal_id found
-KR20210100669: KR: A: No journal_id found
-MA54395: MA: A: No journal_id found
-MA56226: MA: A: No journal_id found
-MX2021006552: MX: A1: No journal_id found
-SG11202105930Q: SG: A1: No journal_id found
-TW202033193: TW: A: No journal_id found
-TW202136225: TW: A: No journal_id found
-VN81157: VN: A: No journal_id found
-AU2017325108: AU: AA: No journal_id found
-AU2020104240: AU: AD: No journal_id found
-AU2020104240: AU: BD: No journal_id found
-AU2022228203: AU: AA: No journal_id found
-CN109963473: CN: A: No journal_id found
-DE602017055336: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-EP3457869: EP: A4: No english abstract and no or multiple non-english abstracts found in source
-EP3457869: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-KR20190049810: KR: A: No journal_id found
-SG11201901835R: SG: A1: No journal_id found
-CN107636160: CN: A: No journal_id found
-DE602016071302: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-EP3259366: EP: A4: No english abstract and no or multiple non-english abstracts found in source
-EP3259366: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-IN201727029766: IN: A: No journal_id found
-ZA201705584: ZA: A: No journal_id found
-CN114746061: CN: A: No journal_id found
-AR104046: AR: AA: No journal_id found
-AU2016239625: AU: AA: No journal_id found
-AU2016239625: AU: BB: No journal_id found
-BR112017020349: BR: A2: No journal_id found
-BR112017020349: BR: B1: No journal_id found
-CL2017002426: CL: A1: No journal_id found
-CL62072: CL: B: No journal_id found
-CN107428722: CN: A: No journal_id found
-CN107428722: CN: B: No journal_id found
-CN111303116: CN: A: No journal_id found
-CN111892576: CN: A: No journal_id found
-CO20170009652: CO: A2: No journal_id found
-CR20170418: CR: A: No journal_id found
-DE602016031005: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-EA033690: EA: B1: No journal_id found
-EA201792145: EA: A1: No journal_id found
-EP3274343: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-EP3683213: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-GE20197032: GE: B: No journal_id found
-HU049090: HU: T2: No journal_id found
-ID201801262: ID: A: No journal_id found
-ID63690: ID: B: No journal_id found
-IL254190: IL: A0: No journal_id found
-IL254190: IL: A1: No journal_id found
-IN201717031091: IN: A: No journal_id found
-IN202018005030: IN: A: No journal_id found
-IN359579: IN: B: No journal_id found
-IN387708: IN: B: No journal_id found
-JP6662901: JP: B2: No english abstract and no or multiple non-english abstracts found in source
-KR20170131426: KR: A: No journal_id found
-MA40816: MA: A1: No journal_id found
-MX2017012195: MX: A1: No journal_id found
-MX384596: MX: B: No journal_id found
-PL3274343: PL: T3: No journal_id found
-PT3274343: PT: T: No english abstract and no or multiple non-english abstracts found in source
-TH177857: TH: A: No journal_id found
-TN2017000407: TN: A1: No journal_id found
-UA120960: UA: C2: No journal_id found
-VN10030183: VN: B: No journal_id found
-ZA201705928: ZA: A: No journal_id found
-AP2013007235: AP: A0: No journal_id found
-AR086365: AR: AA: No journal_id found
-AR116834: AR: AB: No journal_id found
-AR116835: AR: AB: No journal_id found
-AR116836: AR: AB: No journal_id found
-AR116837: AR: AB: No journal_id found
-AR116838: AR: AB: No journal_id found
-AR116839: AR: AB: No journal_id found
-AR118319: AR: AB: No journal_id found
-AU2012256081: AU: AA: No journal_id found
-AU2012256081: AU: BB: No journal_id found
-AU2016210654: AU: AA: No journal_id found
-AU2016210654: AU: BB: No journal_id found
-AU2018200911: AU: AA: No journal_id found
-AU2018200911: AU: BB: No journal_id found
-AU2018200913: AU: AA: No journal_id found
-AU2018200913: AU: BB: No journal_id found
-AU2019246897: AU: AA: No journal_id found
-AU2019246897: AU: BB: No journal_id found
-AU2019246905: AU: AA: No journal_id found
-AU2019246905: AU: BB: No journal_id found
-AU2019246912: AU: AA: No journal_id found
-AU2019246912: AU: BB: No journal_id found
-AU2019246914: AU: AA: No journal_id found
-AU2019246914: AU: BB: No journal_id found
-AU2019246918: AU: AA: No journal_id found
-AU2019246918: AU: BB: No journal_id found
-AU2021225224: AU: AA: No journal_id found
-BR112013029185: BR: A2: No journal_id found
-BR112013029185: BR: B1: No journal_id found
-BR122019018071: BR: B1: No journal_id found
-BR122019018072: BR: B1: No journal_id found
-BR122019018076: BR: B1: No journal_id found
-BR122019018079: BR: B1: No journal_id found
-BR122019018085: BR: B1: No journal_id found
-BR122020017552: BR: B1: No journal_id found
-CL2013003255: CL: A1: No journal_id found
-CL2016001540: CL: A1: No journal_id found
-CL2017003312: CL: A1: No journal_id found
-CL2017003313: CL: A1: No journal_id found
-CL2017003314: CL: A1: No journal_id found
-CL54705: CL: B: No journal_id found
-CL62485: CL: B: No journal_id found
-CL64436: CL: B: No journal_id found
-CL64462: CL: B: No journal_id found
-CL64463: CL: B: No journal_id found
-CN103687950: CN: A: No journal_id found
-CN103687950: CN: B: No journal_id found
-CN106947765: CN: A: No journal_id found
-CN106947765: CN: B: No journal_id found
-CN106978422: CN: A: No journal_id found
-CN106978422: CN: B: No journal_id found
-CN106978423: CN: A: No journal_id found
-CN106978423: CN: B: No journal_id found
-CN107090455: CN: A: No journal_id found
-CN107245487: CN: A: No journal_id found
-CN107245487: CN: B: No journal_id found
-CN109207511: CN: A: No journal_id found
-CN109207511: CN: B: No journal_id found
-CN109207512: CN: A: No journal_id found
-CN109207512: CN: B: No journal_id found
-CN109321573: CN: A: No journal_id found
-CN109321573: CN: B: No journal_id found
-CO6801651: CO: A2: No journal_id found
-DE602012042226: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-DE602012042598: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-DE602012042599: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-DE602012042600: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-DE602012044176: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-DE602012044379: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-EA029865: EA: B1: No journal_id found
-EA031587: EA: B1: No journal_id found
-EA031636: EA: B1: No journal_id found
-EA031667: EA: B1: No journal_id found
-EA031668: EA: B1: No journal_id found
-EA031686: EA: B1: No journal_id found
-EA031839: EA: B1: No journal_id found
-EA037364: EA: B1: No journal_id found
-EA201391690: EA: A1: No journal_id found
-EA201690411: EA: A1: No journal_id found
-EA201690412: EA: A1: No journal_id found
-EA201690413: EA: A1: No journal_id found
-EA201690414: EA: A1: No journal_id found
-EA201690415: EA: A1: No journal_id found
-EA201690416: EA: A1: No journal_id found
-EA201891802: EA: A1: No journal_id found
-EA202092524: EA: A2: No journal_id found
-EA202092524: EA: A3: No journal_id found
-EA202092525: EA: A2: No journal_id found
-EA202092525: EA: A3: No journal_id found
-EP2707489: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-EP2752489: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-EP2752490: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-EP2752491: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-EP2752492: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-EP2762570: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-EP3321366: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-IN10282DN2013: IN: A: No journal_id found
-IN201918049783: IN: A: No journal_id found
-IN201918049784: IN: A: No journal_id found
-IN201918049805: IN: A: No journal_id found
-IN201918049806: IN: A: No journal_id found
-IN201918049807: IN: A: No journal_id found
-IN201918049808: IN: A: No journal_id found
-JP6092192: JP: B2: No english abstract and no or multiple non-english abstracts found in source
-JP6527104: JP: B2: No english abstract and no or multiple non-english abstracts found in source
-JP6542305: JP: B2: No english abstract and no or multiple non-english abstracts found in source
-JP6542306: JP: B2: No english abstract and no or multiple non-english abstracts found in source
-JP6542307: JP: B2: No english abstract and no or multiple non-english abstracts found in source
-JP6563985: JP: B2: No english abstract and no or multiple non-english abstracts found in source
-JP6588947: JP: B2: No english abstract and no or multiple non-english abstracts found in source
-JP6796675: JP: B2: No english abstract and no or multiple non-english abstracts found in source
-JP6796676: JP: B2: No english abstract and no or multiple non-english abstracts found in source
-KR102047066: KR: B1: No journal_id found
-KR102080047: KR: B1: No journal_id found
-KR102080050: KR: B1: No journal_id found
-KR102080055: KR: B1: No journal_id found
-KR102080057: KR: B1: No journal_id found
-KR102080058: KR: B1: No journal_id found
-KR102080064: KR: B1: No journal_id found
-KR20140039224: KR: A: No journal_id found
-KR20190131134: KR: A: No journal_id found
-KR20190131135: KR: A: No journal_id found
-KR20190131136: KR: A: No journal_id found
-KR20190131137: KR: A: No journal_id found
-KR20190131138: KR: A: No journal_id found
-KR20190131139: KR: A: No journal_id found
-MX2013013225: MX: A1: No journal_id found
-MX2022006933: MX: A1: No journal_id found
-MX2022006938: MX: A1: No journal_id found
-MX2022006939: MX: A1: No journal_id found
-MX355475: MX: B: No journal_id found
-MX392999: MX: B: No journal_id found
-UY34068: UY: A1: No journal_id found
-UY39070: UY: A1: No journal_id found
-UY39071: UY: A1: No journal_id found
-UY39072: UY: A1: No journal_id found
-UY39075: UY: A1: No journal_id found
-UY39076: UY: A1: No journal_id found
-UY39077: UY: A1: No journal_id found
-ZA201308380: ZA: A: No journal_id found
-AU2020398693: AU: AA: No journal_id found
-BR112022008021: BR: A2: No journal_id found
-CN114760859: CN: A: No journal_id found
-AU2020398386: AU: AA: No journal_id found
-CN114929201: CN: A: No journal_id found
-IN202227032544: IN: A: No journal_id found
-KR20220113964: KR: A: No journal_id found
-EP3154872: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-AU2020397225: AU: AA: No journal_id found
-BR112022008956: BR: A2: No journal_id found
-CN114745966: CN: A: No journal_id found
-IN202217021529: IN: A: No journal_id found
-MX2022006831: MX: A1: No journal_id found
-SK500302021: SK: U1: No journal_id found
-SK9416: SK: Y1: No journal_id found
-CN114760847: CN: A: No journal_id found
-CN110225866: CN: A: No journal_id found
-CN110225866: CN: B: No journal_id found
-EP3577028: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-AR111043: AR: AA: No journal_id found
-AU2018226112: AU: AA: No journal_id found
-BR112019014300: BR: A2: No journal_id found
-CN110234241: CN: A: No journal_id found
-EP3585190: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-HK40016012: HK: A1: No journal_id found
-ID202001174: ID: A: No journal_id found
-IL268332: IL: A0: No journal_id found
-IN201917025257: IN: A: No journal_id found
-JP7121026: JP: B2: No english abstract and no or multiple non-english abstracts found in source
-KR20190116259: KR: A: No journal_id found
-MX2019009433: MX: A1: No journal_id found
-PH2019501531: PH: A: No journal_id found
-RU2019129609: RU: A: No journal_id found
-RU2019129609: RU: A3: No journal_id found
-RU2754483: RU: C2: No journal_id found
-SG11201907694X: SG: A1: No journal_id found
-TH1901004216: TH: A: No journal_id found
-TW201831098: TW: A: No journal_id found
-TWI758414: TW: B: No journal_id found
-ZA201903532: ZA: A: No journal_id found
-AR122342: AR: AA: No journal_id found
-AU2020397437: AU: AA: No journal_id found
-BR112022010670: BR: A2: No journal_id found
-CN114867358: CN: A: No journal_id found
-KR20220109413: KR: A: No journal_id found
-GB202111875: GB: A0: No english abstract and no or multiple non-english abstracts found in source
-GB2594896: GB: B2: No english abstract and no or multiple non-english abstracts found in source
-TW202039328: TW: A: No journal_id found
-AU2019380668: AU: AA: No journal_id found
-EP3880834: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-DE602013043003: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-EP2671491: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-EP3420870: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-AR077504: AR: AA: No journal_id found
-AR090607: AR: AB: No journal_id found
-BR122013009432: BR: A2: No journal_id found
-BRPI1015078: BR: A2: No journal_id found
-CN102471385: CN: A: No journal_id found
-CN102471385: CN: B: No journal_id found
-CN104059249: CN: A: No journal_id found
-CN104059249: CN: B: No journal_id found
-DE10729889: DE: T8: No english abstract and no or multiple non-english abstracts found in source
-DK2459596: DK: T3: No english abstract and no or multiple non-english abstracts found in source
-EP2459596: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-HU058984: HU: T2: No journal_id found
-IN01703DN2012: IN: A: No journal_id found
-IN201918019353: IN: A: No journal_id found
-IN316663: IN: B: No journal_id found
-MX2011012209: MX: A1: No journal_id found
-MX314868: MX: B: No journal_id found
-MX349836: MX: B: No journal_id found
-PE03852014: PE: A1: No journal_id found
-PE11422012: PE: A1: No journal_id found
-PE20121142: PE: A1: No journal_id found
-PE20140385: PE: A1: No journal_id found
-PT2459596: PT: T: No english abstract and no or multiple non-english abstracts found in source
-TR2022012464: TR: T4: No journal_id found
-ZA201200511: ZA: A: No journal_id found
-BR112022010608: BR: A2: No journal_id found
-CN114761236: CN: A: No journal_id found
-CN112971516: CN: A: No journal_id found
-EP3840528: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-KR20210076872: KR: A: No journal_id found
-AU2020396275: AU: AA: No journal_id found
-AU2020396275: AU: BB: No journal_id found
-BR112022010229: BR: A2: No journal_id found
-CN114745969: CN: A: No journal_id found
-CN114760848: CN: A: No journal_id found
-AU2019233963: AU: AA: No journal_id found
-AU2019233963: AU: BB: No journal_id found
-DE602019012387: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-DK3765563: DK: T3: No english abstract and no or multiple non-english abstracts found in source
-EP3765563: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-GB201804218: GB: A0: No english abstract and no or multiple non-english abstracts found in source
-MA52002: MA: A: No journal_id found
-AR106319: AR: AA: No journal_id found
-AR115992: AR: AB: No journal_id found
-AU2016338851: AU: AA: No journal_id found
-BR112018007318: BR: A2: No journal_id found
-CL2018000946: CL: A1: No journal_id found
-CL2019001434: CL: A1: No journal_id found
-CN108368177: CN: A: No journal_id found
-CN108368177: CN: B: No journal_id found
-CO20180003852: CO: A2: No journal_id found
-DE602016068096: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-DK3362477: DK: T3: No english abstract and no or multiple non-english abstracts found in source
-EA201890928: EA: A1: No journal_id found
-EP3362477: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-HK1254862: HK: A1: No journal_id found
-HK1254862: HK: B: No journal_id found
-HR20220426: HR: T1: No journal_id found
-HR20220426: HR: T8: No journal_id found
-HU058280: HU: T2: No journal_id found
-ID201809111: ID: A: No journal_id found
-IL258448: IL: A0: No journal_id found
-IN201817011468: IN: A: No journal_id found
-JP7034068: JP: B2: No english abstract and no or multiple non-english abstracts found in source
-KR20180070609: KR: A: No journal_id found
-LT3362477: LT: T: No journal_id found
-MA42186: MA: A1: No journal_id found
-MA42186: MA: B1: No journal_id found
-MK12289: MK: T1: No journal_id found
-MX2018004531: MX: A1: No journal_id found
-MY187975: MY: A: No journal_id found
-PH2018500663: PH: A: No journal_id found
-PL3362477: PL: T3: No journal_id found
-PT3362477: PT: T: No english abstract and no or multiple non-english abstracts found in source
-RS63061: RS: B1: No journal_id found
-SG10201913432R: SG: A1: No journal_id found
-SI3362477: SI: T1: No journal_id found
-TR2022002691: TR: T4: No journal_id found
-TW201726737: TW: A: No journal_id found
-TW202216785: TW: A: No journal_id found
-TWI752920: TW: B: No journal_id found
-UA124419: UA: C2: No journal_id found
-UY36942: UY: A1: No journal_id found
-ZA201801975: ZA: A: No journal_id found
-CN114760857: CN: A: No journal_id found
-BR112022010760: BR: A2: No journal_id found
-DE602020003906: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-EP3914526: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-GB202111873: GB: A0: No english abstract and no or multiple non-english abstracts found in source
-GB202208463: GB: A0: No english abstract and no or multiple non-english abstracts found in source
-GB2595601: GB: B2: No english abstract and no or multiple non-english abstracts found in source
-TW202039329: TW: A: No journal_id found
-AU2020395497: AU: AA: No journal_id found
-CN114760853: CN: A: No journal_id found
-KR20220108109: KR: A: No journal_id found
-CN114760858: CN: A: No journal_id found
-BR112018010653: BR: A2: No journal_id found
-BR112018010653: BR: A8: No journal_id found
-BR112018010653: BR: B1: No journal_id found
-CN108290369: CN: A: No journal_id found
-EP3380319: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-IN201847023307: IN: A: No journal_id found
-IN366382: IN: B: No journal_id found
-JP6991140: JP: B2: No english abstract and no or multiple non-english abstracts found in source
-MX2018006340: MX: A1: No journal_id found
-MX392181: MX: B: No journal_id found
-RU2018123177: RU: A: No journal_id found
-RU2018123177: RU: A3: No journal_id found
-RU2731631: RU: C2: No journal_id found
-DK3922719: DK: T1: No english abstract and no or multiple non-english abstracts found in source
-EP3922719: EP: A4: No english abstract and no or multiple non-english abstracts found in source
-AU2020396181: AU: AA: No journal_id found
-BR112022010136: BR: A2: No journal_id found
-CN114760892: CN: A: No journal_id found
-IN202217026974: IN: A: No journal_id found
-KR20220108121: KR: A: No journal_id found
-MX2022006413: MX: A1: No journal_id found
-DE602010068181: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-DK3718922: DK: T3: No english abstract and no or multiple non-english abstracts found in source
-EP2473422: EP: A4: No english abstract and no or multiple non-english abstracts found in source
-EP3718922: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-IL216631: IL: A0: No journal_id found
-LT3718922: LT: T: No journal_id found
-AU2013219189: AU: AA: No journal_id found
-AU2013219189: AU: BB: No journal_id found
-CN103672993: CN: A: No journal_id found
-CN103672993: CN: B: No journal_id found
-CN108158425: CN: A: No journal_id found
-CN108158425: CN: B: No journal_id found
-DE602013005862: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-EP2704526: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-EP2704526: EP: B2: No english abstract and no or multiple non-english abstracts found in source
-EP3041315: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-HU029426: HU: T2: No journal_id found
-IN02762MU2013: IN: A: No journal_id found
-IN202025020630: IN: A: No journal_id found
-IN356052: IN: B: No journal_id found
-KR101814530: KR: B1: No journal_id found
-KR101901937: KR: B1: No journal_id found
-KR20140030023: KR: A: No journal_id found
-KR20140030029: KR: A: No journal_id found
-KR20180001548: KR: A: No journal_id found
-PL2704526: PL: T3: No journal_id found
-PL2704526: PL: T5: No journal_id found
-RU2013140078: RU: A: No journal_id found
-RU2565046: RU: C2: No journal_id found
-AU2020395490: AU: AA: No journal_id found
-BR112022010159: BR: A2: No journal_id found
-CN114760891: CN: A: No journal_id found
-IN202217026968: IN: A: No journal_id found
-KR20220106192: KR: A: No journal_id found
-BR102018076399: BR: A2: No journal_id found
-CN110871865: CN: A: No journal_id found
-CN110871865: CN: B: No journal_id found
-CO20180013816: CO: A1: No journal_id found
-EP3617050: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-ID202001068: ID: A: No journal_id found
-IN201814046154: IN: A: No journal_id found
-KR102066895: KR: B1: No journal_id found
-PH2018050550: PH: A: No journal_id found
-TH1801007669: TH: A: No journal_id found
-TH86250: TH: B: No journal_id found
-TW202010671: TW: A: No journal_id found
-TWI725366: TW: B: No journal_id found
-VN69469: VN: A: No journal_id found
-AU2010234830: AU: AA: No journal_id found
-AU2015203462: AU: AA: No journal_id found
-AU2015203462: AU: BB: No journal_id found
-BRPI1013652: BR: A2: No journal_id found
-BRPI1013652: BR: B1: No journal_id found
-CN102449088: CN: A: No journal_id found
-CN106652770: CN: A: No journal_id found
-DE602010043278: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-EP2414472: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-EP3255111: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-IN04372KN2011: IN: A: No journal_id found
-IN279440: IN: B: No journal_id found
-MX2011010350: MX: A1: No journal_id found
-MX339260: MX: B: No journal_id found
-PL2414472: PL: T3: No journal_id found
-RU2011143933: RU: A: No journal_id found
-RU2635037: RU: C1: No journal_id found
-ZA201107249: ZA: A: No journal_id found
-AU2020397226: AU: AA: No journal_id found
-AU2020397226: AU: BB: No journal_id found
-BR112022010232: BR: A2: No journal_id found
-CN114760860: CN: A: No journal_id found
-AU2017377868: AU: AA: No journal_id found
-AU2017384972: AU: AA: No journal_id found
-AU2017384972: AU: BB: No journal_id found
-BR112019013330: BR: A2: No journal_id found
-BR112019013331: BR: A2: No journal_id found
-BR112019013331: BR: B1: No journal_id found
-CN108431603: CN: A: No journal_id found
-CN108431603: CN: B: No journal_id found
-CN108700579: CN: A: No journal_id found
-CN108700579: CN: B: No journal_id found
-CN113720832: CN: A: No journal_id found
-MX2019007672: MX: A1: No journal_id found
-MX2019007673: MX: A1: No journal_id found
-MX2021011769: MX: A1: No journal_id found
-MX375562: MX: B: No journal_id found
-MX386544: MX: B: No journal_id found
-AU2014253911: AU: AA: No journal_id found
-AU2014253911: AU: BB: No journal_id found
-BR112015026128: BR: A2: No journal_id found
-CN105121297: CN: A: No journal_id found
-CN105121297: CN: B: No journal_id found
-DE602014028783: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-EP2986535: EP: A4: No english abstract and no or multiple non-english abstracts found in source
-EP2986535: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-IN06192CN2015: IN: A: No journal_id found
-JP6416876: JP: B2: No english abstract and no or multiple non-english abstracts found in source
-KR101985570: KR: B1: No journal_id found
-KR20160008187: KR: A: No journal_id found
-MX2015014578: MX: A1: No journal_id found
-MX364607: MX: B: No journal_id found
-RU2015149482: RU: A: No journal_id found
-RU2015149482: RU: A3: No journal_id found
-RU2651595: RU: C2: No journal_id found
-SE544653: SE: C2: No english abstract and no or multiple non-english abstracts found in source
-SE544651: SE: C2: No english abstract and no or multiple non-english abstracts found in source
-CA2813954: CA: AA: No english abstract and no or multiple non-english abstracts found in source
-DE602014081309: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-EP2988834: EP: A4: No english abstract and no or multiple non-english abstracts found in source
-EP2988834: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-AU2015292697: AU: AA: No journal_id found
-AU2015292697: AU: BB: No journal_id found
-DE602015048294: DE: D1: No english abstract and no or multiple non-english abstracts found in source
-EP3042201: EP: A4: No english abstract and no or multiple non-english abstracts found in source
-EP3042201: EP: B1: No english abstract and no or multiple non-english abstracts found in source
-JP6275869: JP: B2: No english abstract and no or multiple non-english abstracts found in source
-TW201613981: TW: A: No journal_id found
-CH718484: CH: A2: No english abstract and no or multiple non-english abstracts found in source
-BR112021008373: BR: A2: No journal_id found
-CN113228122: CN: A: No journal_id found
-CN113228122: CN: B: No journal_id found
-CN212346238: CN: U: No journal_id found
-ES1241180: ES: Y: No english abstract and no or multiple non-english abstracts found in source
-ES1241180: ES: Y1: No english abstract and no or multiple non-english abstracts found in source
-IT201900003482: IT: U1: No english abstract and no or multiple non-english abstracts found in source
-IT201900011541: IT: A1: No english abstract and no or multiple non-english abstracts found in source
+KR102455690: KR: B1: No journal_id found in journal_id_lut
+KR20220140268: KR: A: No journal_id found in journal_id_lut
+KR20220140329: KR: A: No journal_id found in journal_id_lut
+KR20220140325: KR: A: No journal_id found in journal_id_lut
+KR20220140401: KR: A: No journal_id found in journal_id_lut
+KR20220140314: KR: A: No journal_id found in journal_id_lut
+KR20220139696: KR: A: No journal_id found in journal_id_lut
+KR20220138990: KR: A: No journal_id found in journal_id_lut
+CN114073769: CN: A: No journal_id found in journal_id_lut
+IN202114035532: IN: A: No journal_id found in journal_id_lut
+AU2020247127: AU: AA: No journal_id found in journal_id_lut
+BR112021018609: BR: A2: No journal_id found in journal_id_lut
+CN113747801: CN: A: No journal_id found in journal_id_lut
+MX2021011238: MX: A1: No journal_id found in journal_id_lut
+CN115136002: CN: A: No journal_id found in journal_id_lut
+KR20220123711: KR: A: No journal_id found in journal_id_lut
+KR20220138654: KR: A: No journal_id found in journal_id_lut
+KR102324795: KR: B1: No journal_id found in journal_id_lut
+KR20220138655: KR: A: No journal_id found in journal_id_lut
+CN112956543: CN: A: No journal_id found in journal_id_lut
+CN113186121: CN: A: No journal_id found in journal_id_lut
+CN113186121: CN: B: No journal_id found in journal_id_lut
+AU2021105215: AU: AD: No journal_id found in journal_id_lut
+IN202121016160: IN: A: No journal_id found in journal_id_lut
+KR20220138171: KR: A: No journal_id found in journal_id_lut
+CN113443188: CN: A: No journal_id found in journal_id_lut
+ZA202110716: ZA: A: No journal_id found in journal_id_lut
+CN215341267: CN: U: No journal_id found in journal_id_lut
+CN216853702: CN: U: No journal_id found in journal_id_lut
+AU2020396360: AU: AA: No journal_id found in journal_id_lut
+AU2020396377: AU: AA: No journal_id found in journal_id_lut
+AU2020397620: AU: AA: No journal_id found in journal_id_lut
+AU2020398072: AU: AA: No journal_id found in journal_id_lut
+BR112022010814: BR: A2: No journal_id found in journal_id_lut
+BR112022010816: BR: A2: No journal_id found in journal_id_lut
+BR112022010817: BR: A2: No journal_id found in journal_id_lut
+BR112022010822: BR: A2: No journal_id found in journal_id_lut
+CO20220009114: CO: A2: No journal_id found in journal_id_lut
+CO20220009119: CO: A2: No journal_id found in journal_id_lut
+CO20220009121: CO: A2: No journal_id found in journal_id_lut
+CO20220009288: CO: A2: No journal_id found in journal_id_lut
+IL293492: IL: AA: No journal_id found in journal_id_lut
+IL293493: IL: AA: No journal_id found in journal_id_lut
+IL293494: IL: AA: No journal_id found in journal_id_lut
+IL293495: IL: AA: No journal_id found in journal_id_lut
+KR20220110265: KR: A: No journal_id found in journal_id_lut
+KR20220110541: KR: A: No journal_id found in journal_id_lut
+KR20220110798: KR: A: No journal_id found in journal_id_lut
+KR20220111310: KR: A: No journal_id found in journal_id_lut
+MX2022006591: MX: A1: No journal_id found in journal_id_lut
+MX2022006592: MX: A1: No journal_id found in journal_id_lut
+MX2022006593: MX: A1: No journal_id found in journal_id_lut
+PE20221183: PE: A1: No journal_id found in journal_id_lut
+PE20221184: PE: A1: No journal_id found in journal_id_lut
+PE20221185: PE: A1: No journal_id found in journal_id_lut
+CN112998182: CN: A: No journal_id found in journal_id_lut
+CN113086415: CN: A: No journal_id found in journal_id_lut
+KR102349790: KR: B1: No journal_id found in journal_id_lut
+KR102313278: KR: B1: No journal_id found in journal_id_lut
+KR102327496: KR: B1: No journal_id found in journal_id_lut
+UA147709: UA: U: No journal_id found in journal_id_lut
+CN113122473: CN: A: No journal_id found in journal_id_lut
+CN113122473: CN: B: No journal_id found in journal_id_lut
+CN113180250: CN: A: No journal_id found in journal_id_lut
+AU2020395870: AU: AA: No journal_id found in journal_id_lut
+BR112022009586: BR: A2: No journal_id found in journal_id_lut
+CN114786546: CN: A: No journal_id found in journal_id_lut
+IN202217026444: IN: A: No journal_id found in journal_id_lut
+KR20220106191: KR: A: No journal_id found in journal_id_lut
+MX2022006287: MX: A1: No journal_id found in journal_id_lut
+AU2020217761: AU: AA: No journal_id found in journal_id_lut
+AU2020396099: AU: AA: No journal_id found in journal_id_lut
+CN107333223: CN: A: No journal_id found in journal_id_lut
+CN107333223: CN: B: No journal_id found in journal_id_lut
+CN107851364: CN: A: No journal_id found in journal_id_lut
+CN107851364: CN: B: No journal_id found in journal_id_lut
+CN113631030: CN: A: No journal_id found in journal_id_lut
+VN82289: VN: A: No journal_id found in journal_id_lut
+AU2019393256: AU: AA: No journal_id found in journal_id_lut
+BR112021010847: BR: A2: No journal_id found in journal_id_lut
+CN113518616: CN: A: No journal_id found in journal_id_lut
+CN115087647: CN: A: No journal_id found in journal_id_lut
+HK40052080: HK: A1: No journal_id found in journal_id_lut
+IL283712: IL: AA: No journal_id found in journal_id_lut
+IN202117029502: IN: A: No journal_id found in journal_id_lut
+KR20210100669: KR: A: No journal_id found in journal_id_lut
+MA54395: MA: A: No journal_id found in journal_id_lut
+MA56226: MA: A: No journal_id found in journal_id_lut
+MX2021006552: MX: A1: No journal_id found in journal_id_lut
+SG11202105930Q: SG: A1: No journal_id found in journal_id_lut
+TW202033193: TW: A: No journal_id found in journal_id_lut
+TW202136225: TW: A: No journal_id found in journal_id_lut
+VN81157: VN: A: No journal_id found in journal_id_lut
+AU2017325108: AU: AA: No journal_id found in journal_id_lut
+AU2020104240: AU: AD: No journal_id found in journal_id_lut
+AU2020104240: AU: BD: No journal_id found in journal_id_lut
+AU2022228203: AU: AA: No journal_id found in journal_id_lut
+CN109963473: CN: A: No journal_id found in journal_id_lut
+KR20190049810: KR: A: No journal_id found in journal_id_lut
+SG11201901835R: SG: A1: No journal_id found in journal_id_lut
+CN107636160: CN: A: No journal_id found in journal_id_lut
+IN201727029766: IN: A: No journal_id found in journal_id_lut
+ZA201705584: ZA: A: No journal_id found in journal_id_lut
+CN114746061: CN: A: No journal_id found in journal_id_lut
+AR104046: AR: AA: No journal_id found in journal_id_lut
+AU2016239625: AU: AA: No journal_id found in journal_id_lut
+AU2016239625: AU: BB: No journal_id found in journal_id_lut
+BR112017020349: BR: A2: No journal_id found in journal_id_lut
+BR112017020349: BR: B1: No journal_id found in journal_id_lut
+CL2017002426: CL: A1: No journal_id found in journal_id_lut
+CL62072: CL: B: No journal_id found in journal_id_lut
+CN107428722: CN: A: No journal_id found in journal_id_lut
+CN107428722: CN: B: No journal_id found in journal_id_lut
+CN111303116: CN: A: No journal_id found in journal_id_lut
+CN111892576: CN: A: No journal_id found in journal_id_lut
+CO20170009652: CO: A2: No journal_id found in journal_id_lut
+CR20170418: CR: A: No journal_id found in journal_id_lut
+EA033690: EA: B1: No journal_id found in journal_id_lut
+EA201792145: EA: A1: No journal_id found in journal_id_lut
+GE20197032: GE: B: No journal_id found in journal_id_lut
+HU049090: HU: T2: No journal_id found in journal_id_lut
+ID201801262: ID: A: No journal_id found in journal_id_lut
+ID63690: ID: B: No journal_id found in journal_id_lut
+IL254190: IL: A0: No journal_id found in journal_id_lut
+IL254190: IL: A1: No journal_id found in journal_id_lut
+IN201717031091: IN: A: No journal_id found in journal_id_lut
+IN202018005030: IN: A: No journal_id found in journal_id_lut
+IN359579: IN: B: No journal_id found in journal_id_lut
+IN387708: IN: B: No journal_id found in journal_id_lut
+KR20170131426: KR: A: No journal_id found in journal_id_lut
+MA40816: MA: A1: No journal_id found in journal_id_lut
+MX2017012195: MX: A1: No journal_id found in journal_id_lut
+MX384596: MX: B: No journal_id found in journal_id_lut
+PL3274343: PL: T3: No journal_id found in journal_id_lut
+TH177857: TH: A: No journal_id found in journal_id_lut
+TN2017000407: TN: A1: No journal_id found in journal_id_lut
+UA120960: UA: C2: No journal_id found in journal_id_lut
+VN10030183: VN: B: No journal_id found in journal_id_lut
+ZA201705928: ZA: A: No journal_id found in journal_id_lut
+AP2013007235: AP: A0: No journal_id found in journal_id_lut
+AR086365: AR: AA: No journal_id found in journal_id_lut
+AR116834: AR: AB: No journal_id found in journal_id_lut
+AR116835: AR: AB: No journal_id found in journal_id_lut
+AR116836: AR: AB: No journal_id found in journal_id_lut
+AR116837: AR: AB: No journal_id found in journal_id_lut
+AR116838: AR: AB: No journal_id found in journal_id_lut
+AR116839: AR: AB: No journal_id found in journal_id_lut
+AR118319: AR: AB: No journal_id found in journal_id_lut
+AU2012256081: AU: AA: No journal_id found in journal_id_lut
+AU2012256081: AU: BB: No journal_id found in journal_id_lut
+AU2016210654: AU: AA: No journal_id found in journal_id_lut
+AU2016210654: AU: BB: No journal_id found in journal_id_lut
+AU2018200911: AU: AA: No journal_id found in journal_id_lut
+AU2018200911: AU: BB: No journal_id found in journal_id_lut
+AU2018200913: AU: AA: No journal_id found in journal_id_lut
+AU2018200913: AU: BB: No journal_id found in journal_id_lut
+AU2019246897: AU: AA: No journal_id found in journal_id_lut
+AU2019246897: AU: BB: No journal_id found in journal_id_lut
+AU2019246905: AU: AA: No journal_id found in journal_id_lut
+AU2019246905: AU: BB: No journal_id found in journal_id_lut
+AU2019246912: AU: AA: No journal_id found in journal_id_lut
+AU2019246912: AU: BB: No journal_id found in journal_id_lut
+AU2019246914: AU: AA: No journal_id found in journal_id_lut
+AU2019246914: AU: BB: No journal_id found in journal_id_lut
+AU2019246918: AU: AA: No journal_id found in journal_id_lut
+AU2019246918: AU: BB: No journal_id found in journal_id_lut
+AU2021225224: AU: AA: No journal_id found in journal_id_lut
+BR112013029185: BR: A2: No journal_id found in journal_id_lut
+BR112013029185: BR: B1: No journal_id found in journal_id_lut
+BR122019018071: BR: B1: No journal_id found in journal_id_lut
+BR122019018072: BR: B1: No journal_id found in journal_id_lut
+BR122019018076: BR: B1: No journal_id found in journal_id_lut
+BR122019018079: BR: B1: No journal_id found in journal_id_lut
+BR122019018085: BR: B1: No journal_id found in journal_id_lut
+BR122020017552: BR: B1: No journal_id found in journal_id_lut
+CL2013003255: CL: A1: No journal_id found in journal_id_lut
+CL2016001540: CL: A1: No journal_id found in journal_id_lut
+CL2017003312: CL: A1: No journal_id found in journal_id_lut
+CL2017003313: CL: A1: No journal_id found in journal_id_lut
+CL2017003314: CL: A1: No journal_id found in journal_id_lut
+CL54705: CL: B: No journal_id found in journal_id_lut
+CL62485: CL: B: No journal_id found in journal_id_lut
+CL64436: CL: B: No journal_id found in journal_id_lut
+CL64462: CL: B: No journal_id found in journal_id_lut
+CL64463: CL: B: No journal_id found in journal_id_lut
+CN103687950: CN: A: No journal_id found in journal_id_lut
+CN103687950: CN: B: No journal_id found in journal_id_lut
+CN106947765: CN: A: No journal_id found in journal_id_lut
+CN106947765: CN: B: No journal_id found in journal_id_lut
+CN106978422: CN: A: No journal_id found in journal_id_lut
+CN106978422: CN: B: No journal_id found in journal_id_lut
+CN106978423: CN: A: No journal_id found in journal_id_lut
+CN106978423: CN: B: No journal_id found in journal_id_lut
+CN107090455: CN: A: No journal_id found in journal_id_lut
+CN107245487: CN: A: No journal_id found in journal_id_lut
+CN107245487: CN: B: No journal_id found in journal_id_lut
+CN109207511: CN: A: No journal_id found in journal_id_lut
+CN109207511: CN: B: No journal_id found in journal_id_lut
+CN109207512: CN: A: No journal_id found in journal_id_lut
+CN109207512: CN: B: No journal_id found in journal_id_lut
+CN109321573: CN: A: No journal_id found in journal_id_lut
+CN109321573: CN: B: No journal_id found in journal_id_lut
+CO6801651: CO: A2: No journal_id found in journal_id_lut
+EA029865: EA: B1: No journal_id found in journal_id_lut
+EA031587: EA: B1: No journal_id found in journal_id_lut
+EA031636: EA: B1: No journal_id found in journal_id_lut
+EA031667: EA: B1: No journal_id found in journal_id_lut
+EA031668: EA: B1: No journal_id found in journal_id_lut
+EA031686: EA: B1: No journal_id found in journal_id_lut
+EA031839: EA: B1: No journal_id found in journal_id_lut
+EA037364: EA: B1: No journal_id found in journal_id_lut
+EA201391690: EA: A1: No journal_id found in journal_id_lut
+EA201690411: EA: A1: No journal_id found in journal_id_lut
+EA201690412: EA: A1: No journal_id found in journal_id_lut
+EA201690413: EA: A1: No journal_id found in journal_id_lut
+EA201690414: EA: A1: No journal_id found in journal_id_lut
+EA201690415: EA: A1: No journal_id found in journal_id_lut
+EA201690416: EA: A1: No journal_id found in journal_id_lut
+EA201891802: EA: A1: No journal_id found in journal_id_lut
+EA202092524: EA: A2: No journal_id found in journal_id_lut
+EA202092524: EA: A3: No journal_id found in journal_id_lut
+EA202092525: EA: A2: No journal_id found in journal_id_lut
+EA202092525: EA: A3: No journal_id found in journal_id_lut
+IN10282DN2013: IN: A: No journal_id found in journal_id_lut
+IN201918049783: IN: A: No journal_id found in journal_id_lut
+IN201918049784: IN: A: No journal_id found in journal_id_lut
+IN201918049805: IN: A: No journal_id found in journal_id_lut
+IN201918049806: IN: A: No journal_id found in journal_id_lut
+IN201918049807: IN: A: No journal_id found in journal_id_lut
+IN201918049808: IN: A: No journal_id found in journal_id_lut
+KR102047066: KR: B1: No journal_id found in journal_id_lut
+KR102080047: KR: B1: No journal_id found in journal_id_lut
+KR102080050: KR: B1: No journal_id found in journal_id_lut
+KR102080055: KR: B1: No journal_id found in journal_id_lut
+KR102080057: KR: B1: No journal_id found in journal_id_lut
+KR102080058: KR: B1: No journal_id found in journal_id_lut
+KR102080064: KR: B1: No journal_id found in journal_id_lut
+KR20140039224: KR: A: No journal_id found in journal_id_lut
+KR20190131134: KR: A: No journal_id found in journal_id_lut
+KR20190131135: KR: A: No journal_id found in journal_id_lut
+KR20190131136: KR: A: No journal_id found in journal_id_lut
+KR20190131137: KR: A: No journal_id found in journal_id_lut
+KR20190131138: KR: A: No journal_id found in journal_id_lut
+KR20190131139: KR: A: No journal_id found in journal_id_lut
+MX2013013225: MX: A1: No journal_id found in journal_id_lut
+MX2022006933: MX: A1: No journal_id found in journal_id_lut
+MX2022006938: MX: A1: No journal_id found in journal_id_lut
+MX2022006939: MX: A1: No journal_id found in journal_id_lut
+MX355475: MX: B: No journal_id found in journal_id_lut
+MX392999: MX: B: No journal_id found in journal_id_lut
+UY34068: UY: A1: No journal_id found in journal_id_lut
+UY39070: UY: A1: No journal_id found in journal_id_lut
+UY39071: UY: A1: No journal_id found in journal_id_lut
+UY39072: UY: A1: No journal_id found in journal_id_lut
+UY39075: UY: A1: No journal_id found in journal_id_lut
+UY39076: UY: A1: No journal_id found in journal_id_lut
+UY39077: UY: A1: No journal_id found in journal_id_lut
+ZA201308380: ZA: A: No journal_id found in journal_id_lut
+AU2020398693: AU: AA: No journal_id found in journal_id_lut
+BR112022008021: BR: A2: No journal_id found in journal_id_lut
+CN114760859: CN: A: No journal_id found in journal_id_lut
+AU2020398386: AU: AA: No journal_id found in journal_id_lut
+CN114929201: CN: A: No journal_id found in journal_id_lut
+IN202227032544: IN: A: No journal_id found in journal_id_lut
+KR20220113964: KR: A: No journal_id found in journal_id_lut
+AU2020397225: AU: AA: No journal_id found in journal_id_lut
+BR112022008956: BR: A2: No journal_id found in journal_id_lut
+CN114745966: CN: A: No journal_id found in journal_id_lut
+IN202217021529: IN: A: No journal_id found in journal_id_lut
+MX2022006831: MX: A1: No journal_id found in journal_id_lut
+SK500302021: SK: U1: No journal_id found in journal_id_lut
+SK9416: SK: Y1: No journal_id found in journal_id_lut
+CN114760847: CN: A: No journal_id found in journal_id_lut
+CN110225866: CN: A: No journal_id found in journal_id_lut
+CN110225866: CN: B: No journal_id found in journal_id_lut
+AR111043: AR: AA: No journal_id found in journal_id_lut
+AU2018226112: AU: AA: No journal_id found in journal_id_lut
+BR112019014300: BR: A2: No journal_id found in journal_id_lut
+CN110234241: CN: A: No journal_id found in journal_id_lut
+HK40016012: HK: A1: No journal_id found in journal_id_lut
+ID202001174: ID: A: No journal_id found in journal_id_lut
+IL268332: IL: A0: No journal_id found in journal_id_lut
+IN201917025257: IN: A: No journal_id found in journal_id_lut
+KR20190116259: KR: A: No journal_id found in journal_id_lut
+MX2019009433: MX: A1: No journal_id found in journal_id_lut
+PH2019501531: PH: A: No journal_id found in journal_id_lut
+RU2019129609: RU: A: No journal_id found in journal_id_lut
+RU2019129609: RU: A3: No journal_id found in journal_id_lut
+RU2754483: RU: C2: No journal_id found in journal_id_lut
+SG11201907694X: SG: A1: No journal_id found in journal_id_lut
+TH1901004216: TH: A: No journal_id found in journal_id_lut
+TW201831098: TW: A: No journal_id found in journal_id_lut
+TWI758414: TW: B: No journal_id found in journal_id_lut
+ZA201903532: ZA: A: No journal_id found in journal_id_lut
+AR122342: AR: AA: No journal_id found in journal_id_lut
+AU2020397437: AU: AA: No journal_id found in journal_id_lut
+BR112022010670: BR: A2: No journal_id found in journal_id_lut
+CN114867358: CN: A: No journal_id found in journal_id_lut
+KR20220109413: KR: A: No journal_id found in journal_id_lut
+TW202039328: TW: A: No journal_id found in journal_id_lut
+AU2019380668: AU: AA: No journal_id found in journal_id_lut
+AR077504: AR: AA: No journal_id found in journal_id_lut
+AR090607: AR: AB: No journal_id found in journal_id_lut
+BR122013009432: BR: A2: No journal_id found in journal_id_lut
+BRPI1015078: BR: A2: No journal_id found in journal_id_lut
+CN102471385: CN: A: No journal_id found in journal_id_lut
+CN102471385: CN: B: No journal_id found in journal_id_lut
+CN104059249: CN: A: No journal_id found in journal_id_lut
+CN104059249: CN: B: No journal_id found in journal_id_lut
+HU058984: HU: T2: No journal_id found in journal_id_lut
+IN01703DN2012: IN: A: No journal_id found in journal_id_lut
+IN201918019353: IN: A: No journal_id found in journal_id_lut
+IN316663: IN: B: No journal_id found in journal_id_lut
+MX2011012209: MX: A1: No journal_id found in journal_id_lut
+MX314868: MX: B: No journal_id found in journal_id_lut
+MX349836: MX: B: No journal_id found in journal_id_lut
+PE03852014: PE: A1: No journal_id found in journal_id_lut
+PE11422012: PE: A1: No journal_id found in journal_id_lut
+PE20121142: PE: A1: No journal_id found in journal_id_lut
+PE20140385: PE: A1: No journal_id found in journal_id_lut
+TR2022012464: TR: T4: No journal_id found in journal_id_lut
+ZA201200511: ZA: A: No journal_id found in journal_id_lut
+BR112022010608: BR: A2: No journal_id found in journal_id_lut
+CN114761236: CN: A: No journal_id found in journal_id_lut
+CN112971516: CN: A: No journal_id found in journal_id_lut
+KR20210076872: KR: A: No journal_id found in journal_id_lut
+AU2020396275: AU: AA: No journal_id found in journal_id_lut
+AU2020396275: AU: BB: No journal_id found in journal_id_lut
+BR112022010229: BR: A2: No journal_id found in journal_id_lut
+CN114745969: CN: A: No journal_id found in journal_id_lut
+CN114760848: CN: A: No journal_id found in journal_id_lut
+AU2019233963: AU: AA: No journal_id found in journal_id_lut
+AU2019233963: AU: BB: No journal_id found in journal_id_lut
+MA52002: MA: A: No journal_id found in journal_id_lut
+AR106319: AR: AA: No journal_id found in journal_id_lut
+AR115992: AR: AB: No journal_id found in journal_id_lut
+AU2016338851: AU: AA: No journal_id found in journal_id_lut
+BR112018007318: BR: A2: No journal_id found in journal_id_lut
+CL2018000946: CL: A1: No journal_id found in journal_id_lut
+CL2019001434: CL: A1: No journal_id found in journal_id_lut
+CN108368177: CN: A: No journal_id found in journal_id_lut
+CN108368177: CN: B: No journal_id found in journal_id_lut
+CO20180003852: CO: A2: No journal_id found in journal_id_lut
+EA201890928: EA: A1: No journal_id found in journal_id_lut
+HK1254862: HK: A1: No journal_id found in journal_id_lut
+HK1254862: HK: B: No journal_id found in journal_id_lut
+HR20220426: HR: T1: No journal_id found in journal_id_lut
+HR20220426: HR: T8: No journal_id found in journal_id_lut
+HU058280: HU: T2: No journal_id found in journal_id_lut
+ID201809111: ID: A: No journal_id found in journal_id_lut
+IL258448: IL: A0: No journal_id found in journal_id_lut
+IN201817011468: IN: A: No journal_id found in journal_id_lut
+KR20180070609: KR: A: No journal_id found in journal_id_lut
+LT3362477: LT: T: No journal_id found in journal_id_lut
+MA42186: MA: A1: No journal_id found in journal_id_lut
+MA42186: MA: B1: No journal_id found in journal_id_lut
+MK12289: MK: T1: No journal_id found in journal_id_lut
+MX2018004531: MX: A1: No journal_id found in journal_id_lut
+MY187975: MY: A: No journal_id found in journal_id_lut
+PH2018500663: PH: A: No journal_id found in journal_id_lut
+PL3362477: PL: T3: No journal_id found in journal_id_lut
+RS63061: RS: B1: No journal_id found in journal_id_lut
+SG10201913432R: SG: A1: No journal_id found in journal_id_lut
+SI3362477: SI: T1: No journal_id found in journal_id_lut
+TR2022002691: TR: T4: No journal_id found in journal_id_lut
+TW201726737: TW: A: No journal_id found in journal_id_lut
+TW202216785: TW: A: No journal_id found in journal_id_lut
+TWI752920: TW: B: No journal_id found in journal_id_lut
+UA124419: UA: C2: No journal_id found in journal_id_lut
+UY36942: UY: A1: No journal_id found in journal_id_lut
+ZA201801975: ZA: A: No journal_id found in journal_id_lut
+CN114760857: CN: A: No journal_id found in journal_id_lut
+BR112022010760: BR: A2: No journal_id found in journal_id_lut
+TW202039329: TW: A: No journal_id found in journal_id_lut
+AU2020395497: AU: AA: No journal_id found in journal_id_lut
+CN114760853: CN: A: No journal_id found in journal_id_lut
+KR20220108109: KR: A: No journal_id found in journal_id_lut
+CN114760858: CN: A: No journal_id found in journal_id_lut
+BR112018010653: BR: A2: No journal_id found in journal_id_lut
+BR112018010653: BR: A8: No journal_id found in journal_id_lut
+BR112018010653: BR: B1: No journal_id found in journal_id_lut
+CN108290369: CN: A: No journal_id found in journal_id_lut
+IN201847023307: IN: A: No journal_id found in journal_id_lut
+IN366382: IN: B: No journal_id found in journal_id_lut
+MX2018006340: MX: A1: No journal_id found in journal_id_lut
+MX392181: MX: B: No journal_id found in journal_id_lut
+RU2018123177: RU: A: No journal_id found in journal_id_lut
+RU2018123177: RU: A3: No journal_id found in journal_id_lut
+RU2731631: RU: C2: No journal_id found in journal_id_lut
+AU2020396181: AU: AA: No journal_id found in journal_id_lut
+BR112022010136: BR: A2: No journal_id found in journal_id_lut
+CN114760892: CN: A: No journal_id found in journal_id_lut
+IN202217026974: IN: A: No journal_id found in journal_id_lut
+KR20220108121: KR: A: No journal_id found in journal_id_lut
+MX2022006413: MX: A1: No journal_id found in journal_id_lut
+IL216631: IL: A0: No journal_id found in journal_id_lut
+LT3718922: LT: T: No journal_id found in journal_id_lut
+AU2013219189: AU: AA: No journal_id found in journal_id_lut
+AU2013219189: AU: BB: No journal_id found in journal_id_lut
+CN103672993: CN: A: No journal_id found in journal_id_lut
+CN103672993: CN: B: No journal_id found in journal_id_lut
+CN108158425: CN: A: No journal_id found in journal_id_lut
+CN108158425: CN: B: No journal_id found in journal_id_lut
+HU029426: HU: T2: No journal_id found in journal_id_lut
+IN02762MU2013: IN: A: No journal_id found in journal_id_lut
+IN202025020630: IN: A: No journal_id found in journal_id_lut
+IN356052: IN: B: No journal_id found in journal_id_lut
+KR101814530: KR: B1: No journal_id found in journal_id_lut
+KR101901937: KR: B1: No journal_id found in journal_id_lut
+KR20140030023: KR: A: No journal_id found in journal_id_lut
+KR20140030029: KR: A: No journal_id found in journal_id_lut
+KR20180001548: KR: A: No journal_id found in journal_id_lut
+PL2704526: PL: T3: No journal_id found in journal_id_lut
+PL2704526: PL: T5: No journal_id found in journal_id_lut
+RU2013140078: RU: A: No journal_id found in journal_id_lut
+RU2565046: RU: C2: No journal_id found in journal_id_lut
+AU2020395490: AU: AA: No journal_id found in journal_id_lut
+BR112022010159: BR: A2: No journal_id found in journal_id_lut
+CN114760891: CN: A: No journal_id found in journal_id_lut
+IN202217026968: IN: A: No journal_id found in journal_id_lut
+KR20220106192: KR: A: No journal_id found in journal_id_lut
+BR102018076399: BR: A2: No journal_id found in journal_id_lut
+CN110871865: CN: A: No journal_id found in journal_id_lut
+CN110871865: CN: B: No journal_id found in journal_id_lut
+CO20180013816: CO: A1: No journal_id found in journal_id_lut
+ID202001068: ID: A: No journal_id found in journal_id_lut
+IN201814046154: IN: A: No journal_id found in journal_id_lut
+KR102066895: KR: B1: No journal_id found in journal_id_lut
+PH2018050550: PH: A: No journal_id found in journal_id_lut
+TH1801007669: TH: A: No journal_id found in journal_id_lut
+TH86250: TH: B: No journal_id found in journal_id_lut
+TW202010671: TW: A: No journal_id found in journal_id_lut
+TWI725366: TW: B: No journal_id found in journal_id_lut
+VN69469: VN: A: No journal_id found in journal_id_lut
+AU2010234830: AU: AA: No journal_id found in journal_id_lut
+AU2015203462: AU: AA: No journal_id found in journal_id_lut
+AU2015203462: AU: BB: No journal_id found in journal_id_lut
+BRPI1013652: BR: A2: No journal_id found in journal_id_lut
+BRPI1013652: BR: B1: No journal_id found in journal_id_lut
+CN102449088: CN: A: No journal_id found in journal_id_lut
+CN106652770: CN: A: No journal_id found in journal_id_lut
+IN04372KN2011: IN: A: No journal_id found in journal_id_lut
+IN279440: IN: B: No journal_id found in journal_id_lut
+MX2011010350: MX: A1: No journal_id found in journal_id_lut
+MX339260: MX: B: No journal_id found in journal_id_lut
+PL2414472: PL: T3: No journal_id found in journal_id_lut
+RU2011143933: RU: A: No journal_id found in journal_id_lut
+RU2635037: RU: C1: No journal_id found in journal_id_lut
+ZA201107249: ZA: A: No journal_id found in journal_id_lut
+AU2020397226: AU: AA: No journal_id found in journal_id_lut
+AU2020397226: AU: BB: No journal_id found in journal_id_lut
+BR112022010232: BR: A2: No journal_id found in journal_id_lut
+CN114760860: CN: A: No journal_id found in journal_id_lut
+AU2017377868: AU: AA: No journal_id found in journal_id_lut
+AU2017384972: AU: AA: No journal_id found in journal_id_lut
+AU2017384972: AU: BB: No journal_id found in journal_id_lut
+BR112019013330: BR: A2: No journal_id found in journal_id_lut
+BR112019013331: BR: A2: No journal_id found in journal_id_lut
+BR112019013331: BR: B1: No journal_id found in journal_id_lut
+CN108431603: CN: A: No journal_id found in journal_id_lut
+CN108431603: CN: B: No journal_id found in journal_id_lut
+CN108700579: CN: A: No journal_id found in journal_id_lut
+CN108700579: CN: B: No journal_id found in journal_id_lut
+CN113720832: CN: A: No journal_id found in journal_id_lut
+MX2019007672: MX: A1: No journal_id found in journal_id_lut
+MX2019007673: MX: A1: No journal_id found in journal_id_lut
+MX2021011769: MX: A1: No journal_id found in journal_id_lut
+MX375562: MX: B: No journal_id found in journal_id_lut
+MX386544: MX: B: No journal_id found in journal_id_lut
+AU2014253911: AU: AA: No journal_id found in journal_id_lut
+AU2014253911: AU: BB: No journal_id found in journal_id_lut
+BR112015026128: BR: A2: No journal_id found in journal_id_lut
+CN105121297: CN: A: No journal_id found in journal_id_lut
+CN105121297: CN: B: No journal_id found in journal_id_lut
+IN06192CN2015: IN: A: No journal_id found in journal_id_lut
+KR101985570: KR: B1: No journal_id found in journal_id_lut
+KR20160008187: KR: A: No journal_id found in journal_id_lut
+MX2015014578: MX: A1: No journal_id found in journal_id_lut
+MX364607: MX: B: No journal_id found in journal_id_lut
+RU2015149482: RU: A: No journal_id found in journal_id_lut
+RU2015149482: RU: A3: No journal_id found in journal_id_lut
+RU2651595: RU: C2: No journal_id found in journal_id_lut
+AU2015292697: AU: AA: No journal_id found in journal_id_lut
+AU2015292697: AU: BB: No journal_id found in journal_id_lut
+TW201613981: TW: A: No journal_id found in journal_id_lut
+CH718484: CH: A2: Multiple non-english abstracts found
+BR112021008373: BR: A2: No journal_id found in journal_id_lut
+CN113228122: CN: A: No journal_id found in journal_id_lut
+CN113228122: CN: B: No journal_id found in journal_id_lut
+CN212346238: CN: U: No journal_id found in journal_id_lut
