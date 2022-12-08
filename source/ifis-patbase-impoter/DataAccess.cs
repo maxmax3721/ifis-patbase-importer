@@ -135,7 +135,7 @@ namespace ifis_patbase_importer
             };
         }
 
-        internal static Func<XElement, IDictionary<string, object[]>> TitleAccessor()
+        internal static Func<XElement, IDictionary<string, object[]>> TitleAccessor(DataSet sourceDataSet)
         {
             return record =>
             {
@@ -157,7 +157,19 @@ namespace ifis_patbase_importer
                             }
                             else
                             {
-                                forTitle = forTitleElement.Value;
+                                var langrow = sourceDataSet.Tables["language_lut"].Rows.Find(forTitleElement.Attribute("lang").Value);
+
+                                if(langrow != null)
+                                {
+                                    if (langrow["charset"].ToString() == "latin")
+                                    {
+                                        forTitle = forTitleElement.Value;
+                                    }
+                                    else
+                                    {
+                                        throw new KeyDataNotFoundException("No Valid Latin-Charset Title Element Found", record, true);
+                                    }
+                                }
                             }
                         }
                     }
@@ -277,6 +289,12 @@ namespace ifis_patbase_importer
                     tempAddress.Add(address);
 
                     entryNo++;
+                }
+
+                if(authors.Count() == 0)
+                {
+
+                    Program.WriteDataNotFoundError(Console.Error, record, "No author elements found for Record");
                 }
 
                 return new Dictionary<string, object[]>()
@@ -409,7 +427,7 @@ namespace ifis_patbase_importer
                         {
                             var colName = "ID" + i.ToString();
                             var ID = controlledMajorLUTRow[colName];
-                            if (!IsNullorEmptyString(ID))
+                            if (!IsNullorEmptyString(ID) && (!IDs.Contains(ID)))
                             {
                                 IDs.Add(ID);
                             }
@@ -435,7 +453,7 @@ namespace ifis_patbase_importer
 
         internal static Func<XElement, object> GetDate()
         {
-            return record => { return DateTime.Now.Date.ToString("yyyy-MM-dd"); };
+            return record => { return DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"); };
         }
 
         internal static Func<XElement, IDictionary<string, object[]>> ClassificationCodeAccessor()

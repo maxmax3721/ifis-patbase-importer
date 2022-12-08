@@ -78,7 +78,7 @@ namespace ifis_patbase_importer
                     new Mapping(new Column [] {
                         new Column(fsta,"english_title"),
                         new Column(fsta,"foreign_title") 
-                    }, DataAccess.TitleAccessor()),
+                    }, DataAccess.TitleAccessor(sourceDataSet)),
                     new Mapping(new Column(fsta,"patent_number"), DataAccess.PatentNumAccessor(sourceDataSet)),
                     new Mapping(new Column(fsta,"patent_priority"), DataAccess.PatentPriorityAccessor()),
                     new Mapping(new Column(fsta,"section"), record => {return "V"; }),
@@ -164,7 +164,7 @@ namespace ifis_patbase_importer
                         {
                             if (e.Log)
                             {
-                                Program.WriteDataNotFoundError(Console.Error, e.PatentNumber, e.CountryCode, e.KindCode, e.Message);
+                                Program.WriteDataNotFoundError(Console.Error, e.Record, e.Message);
                             }
                             recordsFailed = recordsFailed + 1;
                         }
@@ -188,8 +188,12 @@ namespace ifis_patbase_importer
             output.Flush();
         }
 
-        public static void WriteDataNotFoundError(TextWriter output, string patNum, string countryCode, string kindCode, object message)
+        public static void WriteDataNotFoundError(TextWriter output, XElement record, string message)
         {
+
+            var countryCode = record.Element("CountryCode") != null ? record.Element("CountryCode").Value : null;
+            var kindCode = record.Element("KindCode") != null ? record.Element("KindCode").Value : null;
+            var patNum = record.Attribute("pn") != null ? record.Attribute("pn").Value : null;
             output.WriteLine($"{patNum}: {countryCode}: {kindCode}: {message}");
             output.Flush();
         }
