@@ -394,6 +394,10 @@ namespace ifis_patbase_importer
 
         internal static Func<XElement, object[]> ThesaurusIDAccessor(DataSet sourceDataSet)
         {
+            if (File.Exists("codeNotFoundInControlledMajorLUT.csv"))
+            {
+                System.IO.File.WriteAllText("codeNotFoundInControlledMajorLUT.csv", string.Empty);
+            }
             var codeNotFoundLogger = new CsvLogger("codeNotFoundInControlledMajorLUT.csv");
             codeNotFoundLogger.csvWriter.WriteHeader<CodeNotFoundInControlledMajorLUTLog>();
             codeNotFoundLogger.csvWriter.NextRecord();

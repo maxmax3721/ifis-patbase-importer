@@ -140,6 +140,11 @@ namespace ifis_patbase_importer
 
                 var recordsMigrated = 0;
                 var recordsFailed = 0;
+
+                if (File.Exists("log.csv"))
+                {
+                    System.IO.File.WriteAllText("log.csv", string.Empty);
+                }
                 var logger = new CsvLogger("log.csv");
                 logger.csvWriter.WriteHeader<RecordLog>();
                 logger.csvWriter.NextRecord();

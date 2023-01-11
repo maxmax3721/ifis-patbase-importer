@@ -8,6 +8,7 @@ using Google.Protobuf.WellKnownTypes;
 using MySql.Data.MySqlClient;
 using System.Data;
 using System.Diagnostics;
+using System.Text.RegularExpressions;
 
 namespace ifis_patbase_importer
 {
@@ -18,26 +19,7 @@ namespace ifis_patbase_importer
             var stopwatch = new Stopwatch();
             stopwatch.Start();
 
-            DataTable dt = new DataTable(tableName);
-            using (StreamReader sr = new StreamReader(strFilePath))
-            {
-                string[] headers = sr.ReadLine().Split(',');
-                foreach (string header in headers)
-                {
-                    dt.Columns.Add(header);
-                }
-                while (!sr.EndOfStream)
-                {
-                    string[] rows = sr.ReadLine().Split(',');
-                    DataRow dr = dt.NewRow();
-                    for (int i = 0; i < headers.Length; i++)
-                    {
-                        dr[i] = rows[i];
-                    }
-                    dt.Rows.Add(dr);
-                }
-
-            };
+            DataTable dt = CSVtoDatatable(strFilePath, tableName);
 
             //remove dupes
             dt = dt.DefaultView.ToTable( /*distinct*/ true);
@@ -56,6 +38,37 @@ namespace ifis_patbase_importer
             stopwatch.Stop();
             Program.HandleMessage($"adding CSV {strFilePath} to source dataset took {stopwatch.ElapsedMilliseconds}ms");
             return sourceDataSet;
+        }
+
+        public static DataTable CSVtoDatatable(string strFilePath, string tableName)
+        {
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
+
+            DataTable dt = new DataTable(tableName);
+            using (StreamReader sr = new StreamReader(strFilePath))
+            {
+                string[] headers = Regex.Split(sr.ReadLine(), ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+                foreach (string header in headers)
+                {
+                    dt.Columns.Add(header);
+                }
+                while (!sr.EndOfStream)
+                {
+                    string[] rows = Regex.Split(sr.ReadLine(), ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+                    DataRow dr = dt.NewRow();
+                    for (int i = 0; i < headers.Length; i++)
+                    {
+                        dr[i] = rows[i].Replace("\"", "");
+                    }
+                    dt.Rows.Add(dr);
+                }
+
+            }
+
+            stopwatch.Stop();
+            Program.HandleMessage($"adding CSV {strFilePath} to source dataset took {stopwatch.ElapsedMilliseconds}ms");
+            return dt;
         }
 
         public static DataSet ReplaceInvalidPubIDs(this DataSet sourceDataset)
